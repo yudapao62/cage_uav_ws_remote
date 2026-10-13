@@ -1,0 +1,10 @@
+std_msgs/Header header
+int32 cage_id
+int32 rows
+int32 cols
+float64 origin_x
+float64 origin_y
+float64 origin_z
+float64 cell_size_x
+float64 cell_size_y
+float64 yaw

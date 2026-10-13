@@ -1,0 +1,17 @@
+std_msgs/Header header
+int32 cage_id
+string geometry_mode
+float64 endpoint_a_lat
+float64 endpoint_a_lon
+float64 endpoint_a_alt
+float64 endpoint_b_lat
+float64 endpoint_b_lon
+float64 endpoint_b_alt
+float64 center_lat
+float64 center_lon
+float64 center_alt
+float64 diameter_m
+float64 radius_m
+float64 width
+int32 rows
+int32 cols

@@ -1,0 +1,75 @@
+gps_a:
+  name: GROUND_GPS_A
+  topic: /farm/scene_1/anchor_A/fix
+  type: gps_receiver/AnchorFix
+  selector: {field: anchor_id, equals: A}
+  fields: {latitude: lat, longitude: lon, altitude: altitude, valid: valid, satellites: satellites, source_stamp: stamp}
+  use_altitude: true
+  color: [0.95, 0.20, 0.15, 1.0]
+
+gps_b:
+  name: GROUND_GPS_B
+  topic: /farm/scene_1/anchor_B/fix
+  type: gps_receiver/AnchorFix
+  selector: {field: anchor_id, equals: B}
+  fields: {latitude: lat, longitude: lon, altitude: altitude, valid: valid, satellites: satellites, source_stamp: stamp}
+  use_altitude: true
+  color: [0.20, 0.85, 0.25, 1.0]
+
+gps_c:
+  name: UAV_GPS
+  topic: /mavros/global_position/global
+  type: sensor_msgs/NavSatFix
+  fields: {latitude: latitude, longitude: longitude, altitude: altitude, navsat_status: status.status, source_stamp: header.stamp}
+  use_altitude: true
+  color: [0.15, 0.45, 1.00, 1.0]
+
+reference:
+  mode: first_valid
+  source: gps_a
+  latitude: -35.363261
+  longitude: 149.165230
+  altitude: 584.0
+
+visualization:
+  frame_id: gps_test_enu
+  tf_parent_frame: world
+  publish_rate_hz: 10.0
+  console_rate_hz: 1.0
+  point_scale: 0.8
+  text_height: 0.6
+  line_width: 0.08
+  axis_length: 3.0
+  flatten_z: true
+  show_distance: true
+  show_relative_position: true
+  show_altitude_difference: true
+  show_satellites: true
+  status_position: [-4.0, -4.0, 5.0]
+
+trajectory:
+  enable: true
+  max_points: 1000
+  point_scale: 0.10
+
+filter:
+  require_valid: true
+
+timeout:
+  gps_timeout: 2.0
+
+sync:
+  warning_threshold: 0.2
+
+ground_truth:
+  ab: {enable: false, distance: 0.0}
+  ac: {enable: false, distance: 0.0}
+  bc: {enable: false, distance: 0.0}
+
+csv:
+  # record_gps_rviz_test.sh changes this private parameter while recording.
+  path: ""
+  flush_every_rows: 10
+
+recording:
+  record_markers: true

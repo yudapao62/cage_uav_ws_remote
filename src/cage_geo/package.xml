@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<package format="2"><name>cage_geo</name><version>0.1.0</version><description>WGS84 and local ENU cage geometry.</description><maintainer email="ubuntu@example.com">ubuntu</maintainer><license>MIT</license><buildtool_depend>catkin</buildtool_depend><depend>rospy</depend><depend>sensor_msgs</depend><depend>cage_msgs</depend><exec_depend>python3-geographiclib</exec_depend></package>

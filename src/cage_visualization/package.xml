@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cage_visualization</name>
+  <version>0.1.0</version>
+  <description>Engineering visualization for the cage UAV simulation.</description>
+  <maintainer email="ubuntu@example.com">ubuntu</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>mavros_msgs</depend>
+  <depend>cage_msgs</depend>
+  <depend>cage_geo</depend>
+  <exec_depend>rviz</exec_depend>
+</package>

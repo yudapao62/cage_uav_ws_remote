@@ -1,0 +1,7 @@
+int32 cage_id
+bool include_invalid
+---
+bool success
+string reason_code
+string message
+cage_msgs/ScoutMapSummary[] maps

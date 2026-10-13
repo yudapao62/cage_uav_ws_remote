@@ -1,0 +1,14 @@
+<launch>
+  <arg name="fcu_url" default="tcp://127.0.0.1:5760"/>
+  <arg name="start_rviz" default="true"/>
+  <arg name="start_demo" default="false"/>
+  <arg name="start_acceptance" default="false"/>
+  <include file="$(find cage_bringup)/launch/system.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/><arg name="auto_arm" value="true"/>
+  </include>
+  <include file="$(find cage_visualization)/launch/visualization.launch">
+    <arg name="start_rviz" value="$(arg start_rviz)"/>
+  </include>
+  <node if="$(arg start_acceptance)" pkg="cage_bringup" type="simulation_acceptance.py" name="simulation_acceptance" output="screen" required="false"/>
+  <node if="$(arg start_demo)" pkg="cage_bringup" type="publish_demo_mission.py" name="publish_demo_mission" output="screen" required="false"/>
+</launch>

@@ -1,0 +1,1751 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="fish_farm">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="farm_link">
+      <collision name="beam_0_collision">
+        <pose>-6.060142 -75.993156 0.450000 0 0 -1.573433</pose>
+        <geometry><box><size>11.941739 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_0_visual">
+        <pose>-6.060142 -75.993156 0.450000 0 0 -1.573433</pose>
+        <geometry><box><size>11.941739 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_0_1">
+        <pose>-6.060142 -75.993156 0.610000 0 1.570796 -1.573433</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_1_collision">
+        <pose>-6.008007 -88.000920 0.450000 0 0 -1.563554</pose>
+        <geometry><box><size>12.074049 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_1_visual">
+        <pose>-6.008007 -88.000920 0.450000 0 0 -1.563554</pose>
+        <geometry><box><size>12.074049 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_1_1">
+        <pose>-6.020100 -85.988615 0.610000 0 1.570796 -1.563554</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_0_1_2">
+        <pose>-5.995914 -90.013225 0.610000 0 1.570796 -1.563554</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_2_collision">
+        <pose>-6.018909 -100.050292 0.450000 0 0 -1.582428</pose>
+        <geometry><box><size>12.025284 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_2_visual">
+        <pose>-6.018909 -100.050292 0.450000 0 0 -1.582428</pose>
+        <geometry><box><size>12.025284 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_2_1">
+        <pose>-6.003182 -98.046140 0.610000 0 1.570796 -1.582428</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_0_2_2">
+        <pose>-6.034636 -102.054444 0.610000 0 1.570796 -1.582428</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_3_collision">
+        <pose>-6.070661 -112.025128 0.450000 0 0 -1.569204</pose>
+        <geometry><box><size>11.924762 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_3_visual">
+        <pose>-6.070661 -112.025128 0.450000 0 0 -1.569204</pose>
+        <geometry><box><size>11.924762 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_3_1">
+        <pose>-6.070661 -112.025128 0.610000 0 1.570796 -1.569204</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_4_collision">
+        <pose>-6.037188 -123.971245 0.450000 0 0 -1.558357</pose>
+        <geometry><box><size>11.967716 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_4_visual">
+        <pose>-6.037188 -123.971245 0.450000 0 0 -1.558357</pose>
+        <geometry><box><size>11.967716 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_4_1">
+        <pose>-6.037188 -123.971245 0.610000 0 1.570796 -1.558357</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_5_collision">
+        <pose>-6.023665 -135.939614 0.450000 0 0 -1.570920</pose>
+        <geometry><box><size>11.969364 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_5_visual">
+        <pose>-6.023665 -135.939614 0.450000 0 0 -1.570920</pose>
+        <geometry><box><size>11.969364 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_5_1">
+        <pose>-6.023665 -135.939614 0.610000 0 1.570796 -1.570920</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_6_collision">
+        <pose>-6.020498 -147.974114 0.450000 0 0 -1.571848</pose>
+        <geometry><box><size>12.099862 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_6_visual">
+        <pose>-6.020498 -147.974114 0.450000 0 0 -1.571848</pose>
+        <geometry><box><size>12.099862 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_6_1">
+        <pose>-6.029727 -145.957491 0.610000 0 1.570796 -1.571848</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_0_6_2">
+        <pose>-6.011268 -149.990736 0.610000 0 1.570796 -1.571848</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_7_collision">
+        <pose>-5.989263 -159.989626 0.450000 0 0 -1.567781</pose>
+        <geometry><box><size>11.931291 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_7_visual">
+        <pose>-5.989263 -159.989626 0.450000 0 0 -1.567781</pose>
+        <geometry><box><size>11.931291 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_7_1">
+        <pose>-5.989263 -159.989626 0.610000 0 1.570796 -1.567781</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_8_collision">
+        <pose>-6.032339 -172.002390 0.450000 0 0 -1.579866</pose>
+        <geometry><box><size>12.094598 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_8_visual">
+        <pose>-6.032339 -172.002390 0.450000 0 0 -1.579866</pose>
+        <geometry><box><size>12.094598 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_8_1">
+        <pose>-6.016798 -169.986683 0.610000 0 1.570796 -1.579866</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_0_8_2">
+        <pose>-6.047879 -174.018096 0.610000 0 1.570796 -1.579866</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_9_collision">
+        <pose>-6.023629 -184.049220 0.450000 0 0 -1.562292</pose>
+        <geometry><box><size>11.999932 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_9_visual">
+        <pose>-6.023629 -184.049220 0.450000 0 0 -1.562292</pose>
+        <geometry><box><size>11.999932 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_0_9_1">
+        <pose>-6.023629 -184.049220 0.610000 0 1.570796 -1.562292</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_10_collision">
+        <pose>5.959366 -76.023797 0.450000 0 0 -1.571895</pose>
+        <geometry><box><size>12.098749 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_10_visual">
+        <pose>5.959366 -76.023797 0.450000 0 0 -1.571895</pose>
+        <geometry><box><size>12.098749 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_0_1">
+        <pose>5.954536 -74.007345 0.610000 0 1.570796 -1.571895</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_1_0_2">
+        <pose>5.964196 -78.040249 0.610000 0 1.570796 -1.571895</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_11_collision">
+        <pose>5.954665 -88.003997 0.450000 0 0 -1.580307</pose>
+        <geometry><box><size>11.861747 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_11_visual">
+        <pose>5.954665 -88.003997 0.450000 0 0 -1.580307</pose>
+        <geometry><box><size>11.861747 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_1_1">
+        <pose>5.954665 -88.003997 0.610000 0 1.570796 -1.580307</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_12_collision">
+        <pose>5.976035 -99.995219 0.450000 0 0 -1.557555</pose>
+        <geometry><box><size>12.121031 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_12_visual">
+        <pose>5.976035 -99.995219 0.450000 0 0 -1.557555</pose>
+        <geometry><box><size>12.121031 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_2_1">
+        <pose>5.962515 -97.975093 0.610000 0 1.570796 -1.557555</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_1_2_2">
+        <pose>5.989556 -102.015346 0.610000 0 1.570796 -1.557555</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_13_collision">
+        <pose>6.026677 -112.052370 0.450000 0 0 -1.573112</pose>
+        <geometry><box><size>11.993558 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_13_visual">
+        <pose>6.026677 -112.052370 0.450000 0 0 -1.573112</pose>
+        <geometry><box><size>11.993558 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_3_1">
+        <pose>6.026677 -112.052370 0.610000 0 1.570796 -1.573112</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_14_collision">
+        <pose>6.056228 -124.027469 0.450000 0 0 -1.569229</pose>
+        <geometry><box><size>11.956719 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_14_visual">
+        <pose>6.056228 -124.027469 0.450000 0 0 -1.569229</pose>
+        <geometry><box><size>11.956719 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_4_1">
+        <pose>6.056228 -124.027469 0.610000 0 1.570796 -1.569229</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_15_collision">
+        <pose>6.042013 -135.993181 0.450000 0 0 -1.572456</pose>
+        <geometry><box><size>11.974959 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_15_visual">
+        <pose>6.042013 -135.993181 0.450000 0 0 -1.572456</pose>
+        <geometry><box><size>11.974959 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_5_1">
+        <pose>6.042013 -135.993181 0.610000 0 1.570796 -1.572456</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_16_collision">
+        <pose>6.013645 -148.016635 0.450000 0 0 -1.563530</pose>
+        <geometry><box><size>12.072144 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_16_visual">
+        <pose>6.013645 -148.016635 0.450000 0 0 -1.563530</pose>
+        <geometry><box><size>12.072144 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_6_1">
+        <pose>6.011872 -146.004612 0.610000 0 1.570796 -1.563530</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_1_6_2">
+        <pose>6.015418 -150.028658 0.610000 0 1.570796 -1.563530</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_17_collision">
+        <pose>6.015670 -160.055289 0.450000 0 0 -1.574183</pose>
+        <geometry><box><size>12.005170 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_17_visual">
+        <pose>6.015670 -160.055289 0.450000 0 0 -1.574183</pose>
+        <geometry><box><size>12.005170 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_7_1">
+        <pose>6.016768 -158.054428 0.610000 0 1.570796 -1.574183</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_1_7_2">
+        <pose>6.014572 -162.056150 0.610000 0 1.570796 -1.574183</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_18_collision">
+        <pose>5.969854 -172.045302 0.450000 0 0 -1.584081</pose>
+        <geometry><box><size>11.975160 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_18_visual">
+        <pose>5.969854 -172.045302 0.450000 0 0 -1.584081</pose>
+        <geometry><box><size>11.975160 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_8_1">
+        <pose>5.969854 -172.045302 0.610000 0 1.570796 -1.584081</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_19_collision">
+        <pose>5.946817 -183.994598 0.450000 0 0 -1.562603</pose>
+        <geometry><box><size>11.923796 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_19_visual">
+        <pose>5.946817 -183.994598 0.450000 0 0 -1.562603</pose>
+        <geometry><box><size>11.923796 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_1_9_1">
+        <pose>5.946817 -183.994598 0.610000 0 1.570796 -1.562603</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_20_collision">
+        <pose>17.960861 -75.934463 0.450000 0 0 -1.576057</pose>
+        <geometry><box><size>12.003396 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_20_visual">
+        <pose>17.960861 -75.934463 0.450000 0 0 -1.576057</pose>
+        <geometry><box><size>12.003396 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_0_1">
+        <pose>17.959656 -73.933898 0.610000 0 1.570796 -1.576057</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_2_0_2">
+        <pose>17.962066 -77.935029 0.610000 0 1.570796 -1.576057</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_21_collision">
+        <pose>17.971424 -87.978935 0.450000 0 0 -1.574954</pose>
+        <geometry><box><size>12.085557 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_21_visual">
+        <pose>17.971424 -87.978935 0.450000 0 0 -1.574954</pose>
+        <geometry><box><size>12.085557 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_1_1">
+        <pose>17.969108 -85.964677 0.610000 0 1.570796 -1.574954</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_2_1_2">
+        <pose>17.973741 -89.993193 0.610000 0 1.570796 -1.574954</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_22_collision">
+        <pose>17.965947 -100.000469 0.450000 0 0 -1.574003</pose>
+        <geometry><box><size>11.957545 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_22_visual">
+        <pose>17.965947 -100.000469 0.450000 0 0 -1.574003</pose>
+        <geometry><box><size>11.957545 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_2_1">
+        <pose>17.965947 -100.000469 0.610000 0 1.570796 -1.574003</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_23_collision">
+        <pose>18.011693 -111.970973 0.450000 0 0 -1.555018</pose>
+        <geometry><box><size>11.984052 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_23_visual">
+        <pose>18.011693 -111.970973 0.450000 0 0 -1.555018</pose>
+        <geometry><box><size>11.984052 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_3_1">
+        <pose>18.011693 -111.970973 0.610000 0 1.570796 -1.555018</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_24_collision">
+        <pose>18.043663 -123.993201 0.450000 0 0 -1.578790</pose>
+        <geometry><box><size>12.061083 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_24_visual">
+        <pose>18.043663 -123.993201 0.450000 0 0 -1.578790</pose>
+        <geometry><box><size>12.061083 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_4_1">
+        <pose>18.052397 -121.983040 0.610000 0 1.570796 -1.578790</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_2_4_2">
+        <pose>18.034929 -126.003363 0.610000 0 1.570796 -1.578790</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_25_collision">
+        <pose>18.027061 -135.985534 0.450000 0 0 -1.565669</pose>
+        <geometry><box><size>11.923712 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_25_visual">
+        <pose>18.027061 -135.985534 0.450000 0 0 -1.565669</pose>
+        <geometry><box><size>11.923712 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_5_1">
+        <pose>18.027061 -135.985534 0.610000 0 1.570796 -1.565669</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_26_collision">
+        <pose>18.008687 -147.946763 0.450000 0 0 -1.568499</pose>
+        <geometry><box><size>11.998893 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_26_visual">
+        <pose>18.008687 -147.946763 0.450000 0 0 -1.568499</pose>
+        <geometry><box><size>11.998893 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_6_1">
+        <pose>18.008687 -147.946763 0.610000 0 1.570796 -1.568499</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_27_collision">
+        <pose>18.001556 -160.012234 0.450000 0 0 -1.571365</pose>
+        <geometry><box><size>12.132251 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_27_visual">
+        <pose>18.001556 -160.012234 0.450000 0 0 -1.571365</pose>
+        <geometry><box><size>12.132251 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_7_1">
+        <pose>17.994609 -157.990204 0.610000 0 1.570796 -1.571365</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_2_7_2">
+        <pose>18.008504 -162.034264 0.610000 0 1.570796 -1.571365</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_28_collision">
+        <pose>18.025969 -172.043718 0.450000 0 0 -1.572020</pose>
+        <geometry><box><size>11.930790 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_28_visual">
+        <pose>18.025969 -172.043718 0.450000 0 0 -1.572020</pose>
+        <geometry><box><size>11.930790 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_8_1">
+        <pose>18.025969 -172.043718 0.610000 0 1.570796 -1.572020</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_29_collision">
+        <pose>18.036849 -184.031984 0.450000 0 0 -1.566741</pose>
+        <geometry><box><size>12.045753 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_29_visual">
+        <pose>18.036849 -184.031984 0.450000 0 0 -1.566741</pose>
+        <geometry><box><size>12.045753 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_2_9_1">
+        <pose>18.034412 -182.024360 0.610000 0 1.570796 -1.566741</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_2_9_2">
+        <pose>18.039286 -186.039608 0.610000 0 1.570796 -1.566741</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_30_collision">
+        <pose>29.943987 -75.963560 0.450000 0 0 -1.563230</pose>
+        <geometry><box><size>12.013884 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_30_visual">
+        <pose>29.943987 -75.963560 0.450000 0 0 -1.563230</pose>
+        <geometry><box><size>12.013884 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_0_1">
+        <pose>29.937704 -73.961256 0.610000 0 1.570796 -1.563230</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_3_0_2">
+        <pose>29.950271 -77.965864 0.610000 0 1.570796 -1.563230</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_31_collision">
+        <pose>30.016852 -87.962115 0.450000 0 0 -1.567151</pose>
+        <geometry><box><size>11.983772 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_31_visual">
+        <pose>30.016852 -87.962115 0.450000 0 0 -1.567151</pose>
+        <geometry><box><size>11.983772 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_1_1">
+        <pose>30.016852 -87.962115 0.610000 0 1.570796 -1.567151</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_32_collision">
+        <pose>30.020607 -100.006988 0.450000 0 0 -1.582278</pose>
+        <geometry><box><size>12.106879 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_32_visual">
+        <pose>30.020607 -100.006988 0.450000 0 0 -1.582278</pose>
+        <geometry><box><size>12.106879 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_2_1">
+        <pose>30.037360 -97.989244 0.610000 0 1.570796 -1.582278</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_3_2_2">
+        <pose>30.003854 -102.024732 0.610000 0 1.570796 -1.582278</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_33_collision">
+        <pose>29.976825 -112.042545 0.450000 0 0 -1.573009</pose>
+        <geometry><box><size>11.964658 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_33_visual">
+        <pose>29.976825 -112.042545 0.450000 0 0 -1.573009</pose>
+        <geometry><box><size>11.964658 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_3_1">
+        <pose>29.976825 -112.042545 0.610000 0 1.570796 -1.573009</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_34_collision">
+        <pose>29.988359 -124.045599 0.450000 0 0 -1.565124</pose>
+        <geometry><box><size>12.041462 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_34_visual">
+        <pose>29.988359 -124.045599 0.450000 0 0 -1.565124</pose>
+        <geometry><box><size>12.041462 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_4_1">
+        <pose>29.986673 -122.038689 0.610000 0 1.570796 -1.565124</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_3_4_2">
+        <pose>29.990045 -126.052508 0.610000 0 1.570796 -1.565124</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_35_collision">
+        <pose>29.976438 -136.014354 0.450000 0 0 -1.569865</pose>
+        <geometry><box><size>11.896102 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_35_visual">
+        <pose>29.976438 -136.014354 0.450000 0 0 -1.569865</pose>
+        <geometry><box><size>11.896102 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_5_1">
+        <pose>29.976438 -136.014354 0.610000 0 1.570796 -1.569865</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_36_collision">
+        <pose>29.960750 -147.986100 0.450000 0 0 -1.567214</pose>
+        <geometry><box><size>12.047438 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_36_visual">
+        <pose>29.960750 -147.986100 0.450000 0 0 -1.567214</pose>
+        <geometry><box><size>12.047438 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_6_1">
+        <pose>29.960320 -145.978194 0.610000 0 1.570796 -1.567214</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_37_collision">
+        <pose>30.012845 -160.011676 0.450000 0 0 -1.568262</pose>
+        <geometry><box><size>12.004145 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_37_visual">
+        <pose>30.012845 -160.011676 0.450000 0 0 -1.568262</pose>
+        <geometry><box><size>12.004145 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_7_1">
+        <pose>29.995910 -158.011057 0.610000 0 1.570796 -1.568262</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_3_7_2">
+        <pose>30.029781 -162.012295 0.610000 0 1.570796 -1.568262</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_38_collision">
+        <pose>30.009371 -171.998719 0.450000 0 0 -1.578713</pose>
+        <geometry><box><size>11.970863 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_38_visual">
+        <pose>30.009371 -171.998719 0.450000 0 0 -1.578713</pose>
+        <geometry><box><size>11.970863 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_8_1">
+        <pose>30.009371 -171.998719 0.610000 0 1.570796 -1.578713</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_39_collision">
+        <pose>29.978308 -184.031755 0.450000 0 0 -1.569635</pose>
+        <geometry><box><size>12.095791 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_39_visual">
+        <pose>29.978308 -184.031755 0.450000 0 0 -1.569635</pose>
+        <geometry><box><size>12.095791 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_3_9_1">
+        <pose>29.970569 -182.015805 0.610000 0 1.570796 -1.569635</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_3_9_2">
+        <pose>29.986047 -186.047705 0.610000 0 1.570796 -1.569635</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_40_collision">
+        <pose>41.973965 -75.936045 0.450000 0 0 -1.567109</pose>
+        <geometry><box><size>12.003357 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_40_visual">
+        <pose>41.973965 -75.936045 0.450000 0 0 -1.567109</pose>
+        <geometry><box><size>12.003357 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_0_1">
+        <pose>41.958490 -73.935545 0.610000 0 1.570796 -1.567109</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_4_0_2">
+        <pose>41.989440 -77.936544 0.610000 0 1.570796 -1.567109</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_41_collision">
+        <pose>42.003968 -87.992138 0.450000 0 0 -1.574816</pose>
+        <geometry><box><size>12.109233 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_41_visual">
+        <pose>42.003968 -87.992138 0.450000 0 0 -1.574816</pose>
+        <geometry><box><size>12.109233 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_1_1">
+        <pose>42.009443 -85.973940 0.610000 0 1.570796 -1.574816</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_4_1_2">
+        <pose>41.998494 -90.010336 0.610000 0 1.570796 -1.574816</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_42_collision">
+        <pose>41.984302 -99.988449 0.450000 0 0 -1.564693</pose>
+        <geometry><box><size>11.883434 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_42_visual">
+        <pose>41.984302 -99.988449 0.450000 0 0 -1.564693</pose>
+        <geometry><box><size>11.883434 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_2_1">
+        <pose>41.984302 -99.988449 0.610000 0 1.570796 -1.564693</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_43_collision">
+        <pose>41.992859 -112.004772 0.450000 0 0 -1.575489</pose>
+        <geometry><box><size>12.149238 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_43_visual">
+        <pose>41.992859 -112.004772 0.450000 0 0 -1.575489</pose>
+        <geometry><box><size>12.149238 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_3_1">
+        <pose>41.988925 -109.979903 0.610000 0 1.570796 -1.575489</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_4_3_2">
+        <pose>41.996792 -114.029641 0.610000 0 1.570796 -1.575489</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_44_collision">
+        <pose>42.031192 -124.077376 0.450000 0 0 -1.561289</pose>
+        <geometry><box><size>11.996110 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_44_visual">
+        <pose>42.031192 -124.077376 0.450000 0 0 -1.561289</pose>
+        <geometry><box><size>11.996110 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_4_1">
+        <pose>42.031192 -124.077376 0.610000 0 1.570796 -1.561289</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_45_collision">
+        <pose>42.046520 -135.998605 0.450000 0 0 -1.568675</pose>
+        <geometry><box><size>11.846486 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_45_visual">
+        <pose>42.046520 -135.998605 0.450000 0 0 -1.568675</pose>
+        <geometry><box><size>11.846486 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_5_1">
+        <pose>42.046520 -135.998605 0.610000 0 1.570796 -1.568675</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_46_collision">
+        <pose>42.020615 -147.975455 0.450000 0 0 -1.568218</pose>
+        <geometry><box><size>12.107272 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_46_visual">
+        <pose>42.020615 -147.975455 0.450000 0 0 -1.568218</pose>
+        <geometry><box><size>12.107272 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_6_1">
+        <pose>42.025515 -145.957583 0.610000 0 1.570796 -1.568218</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_4_6_2">
+        <pose>42.015715 -149.993328 0.610000 0 1.570796 -1.568218</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_47_collision">
+        <pose>42.014235 -159.995883 0.450000 0 0 -1.565278</pose>
+        <geometry><box><size>11.933630 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_47_visual">
+        <pose>42.014235 -159.995883 0.450000 0 0 -1.565278</pose>
+        <geometry><box><size>11.933630 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_7_1">
+        <pose>42.014235 -159.995883 0.610000 0 1.570796 -1.565278</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_48_collision">
+        <pose>42.006058 -171.950270 0.450000 0 0 -1.577836</pose>
+        <geometry><box><size>11.975202 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_48_visual">
+        <pose>42.006058 -171.950270 0.450000 0 0 -1.577836</pose>
+        <geometry><box><size>11.975202 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_8_1">
+        <pose>42.006058 -171.950270 0.610000 0 1.570796 -1.577836</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_49_collision">
+        <pose>42.031086 -183.965222 0.450000 0 0 -1.557388</pose>
+        <geometry><box><size>12.055034 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_49_visual">
+        <pose>42.031086 -183.965222 0.450000 0 0 -1.557388</pose>
+        <geometry><box><size>12.055034 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_4_9_1">
+        <pose>42.017245 -181.956097 0.610000 0 1.570796 -1.557388</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_4_9_2">
+        <pose>42.044928 -185.974347 0.610000 0 1.570796 -1.557388</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_50_collision">
+        <pose>53.955363 -76.030115 0.450000 0 0 -1.571426</pose>
+        <geometry><box><size>11.939965 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_50_visual">
+        <pose>53.955363 -76.030115 0.450000 0 0 -1.571426</pose>
+        <geometry><box><size>11.939965 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_0_1">
+        <pose>53.955363 -76.030115 0.610000 0 1.570796 -1.571426</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_51_collision">
+        <pose>54.003934 -88.033057 0.450000 0 0 -1.555054</pose>
+        <geometry><box><size>12.066434 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_51_visual">
+        <pose>54.003934 -88.033057 0.450000 0 0 -1.555054</pose>
+        <geometry><box><size>12.066434 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_1_1">
+        <pose>53.985484 -86.022069 0.610000 0 1.570796 -1.555054</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_5_1_2">
+        <pose>54.022383 -90.044045 0.610000 0 1.570796 -1.555054</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_52_collision">
+        <pose>54.040757 -100.016886 0.450000 0 0 -1.574823</pose>
+        <geometry><box><size>11.901788 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_52_visual">
+        <pose>54.040757 -100.016886 0.450000 0 0 -1.574823</pose>
+        <geometry><box><size>11.901788 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_2_1">
+        <pose>54.040757 -100.016886 0.610000 0 1.570796 -1.574823</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_53_collision">
+        <pose>53.983343 -111.992593 0.450000 0 0 -1.575768</pose>
+        <geometry><box><size>12.049935 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_53_visual">
+        <pose>53.983343 -111.992593 0.450000 0 0 -1.575768</pose>
+        <geometry><box><size>12.049935 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_3_1">
+        <pose>53.996306 -109.984313 0.610000 0 1.570796 -1.575768</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_5_3_2">
+        <pose>53.970380 -114.000874 0.610000 0 1.570796 -1.575768</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_54_collision">
+        <pose>53.975377 -124.029718 0.450000 0 0 -1.562738</pose>
+        <geometry><box><size>12.024726 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_54_visual">
+        <pose>53.975377 -124.029718 0.450000 0 0 -1.562738</pose>
+        <geometry><box><size>12.024726 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_4_2">
+        <pose>53.985685 -126.033813 0.610000 0 1.570796 -1.562738</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_55_collision">
+        <pose>54.005579 -136.043291 0.450000 0 0 -1.567853</pose>
+        <geometry><box><size>12.002579 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_55_visual">
+        <pose>54.005579 -136.043291 0.450000 0 0 -1.567853</pose>
+        <geometry><box><size>12.002579 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_5_1">
+        <pose>54.005819 -134.042861 0.610000 0 1.570796 -1.567853</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_5_5_2">
+        <pose>54.005338 -138.043721 0.610000 0 1.570796 -1.567853</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_56_collision">
+        <pose>53.988361 -147.982336 0.450000 0 0 -1.571281</pose>
+        <geometry><box><size>11.875557 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_56_visual">
+        <pose>53.988361 -147.982336 0.450000 0 0 -1.571281</pose>
+        <geometry><box><size>11.875557 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_6_1">
+        <pose>53.988361 -147.982336 0.610000 0 1.570796 -1.571281</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_57_collision">
+        <pose>54.020260 -159.921604 0.450000 0 0 -1.557873</pose>
+        <geometry><box><size>12.003415 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_57_visual">
+        <pose>54.020260 -159.921604 0.450000 0 0 -1.557873</pose>
+        <geometry><box><size>12.003415 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_7_1">
+        <pose>54.004129 -157.921100 0.610000 0 1.570796 -1.557873</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_5_7_2">
+        <pose>54.036392 -161.922108 0.610000 0 1.570796 -1.557873</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_58_collision">
+        <pose>54.060861 -171.991856 0.450000 0 0 -1.573443</pose>
+        <geometry><box><size>12.137489 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_58_visual">
+        <pose>54.060861 -171.991856 0.450000 0 0 -1.573443</pose>
+        <geometry><box><size>12.137489 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_8_1">
+        <pose>54.063459 -169.968943 0.610000 0 1.570796 -1.573443</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_5_8_2">
+        <pose>54.058263 -174.014769 0.610000 0 1.570796 -1.573443</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_59_collision">
+        <pose>53.991167 -184.014899 0.450000 0 0 -1.578716</pose>
+        <geometry><box><size>11.909250 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_59_visual">
+        <pose>53.991167 -184.014899 0.450000 0 0 -1.578716</pose>
+        <geometry><box><size>11.909250 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_5_9_1">
+        <pose>53.991167 -184.014899 0.610000 0 1.570796 -1.578716</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_60_collision">
+        <pose>66.034635 -75.997093 0.450000 0 0 -1.579787</pose>
+        <geometry><box><size>11.873452 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_60_visual">
+        <pose>66.034635 -75.997093 0.450000 0 0 -1.579787</pose>
+        <geometry><box><size>11.873452 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_0_1">
+        <pose>66.034635 -75.997093 0.610000 0 1.570796 -1.579787</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_61_collision">
+        <pose>66.019727 -87.932389 0.450000 0 0 -1.570109</pose>
+        <geometry><box><size>11.997450 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_61_visual">
+        <pose>66.019727 -87.932389 0.450000 0 0 -1.570109</pose>
+        <geometry><box><size>11.997450 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_1_1">
+        <pose>66.019727 -87.932389 0.610000 0 1.570796 -1.570109</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_62_collision">
+        <pose>65.991119 -99.986804 0.450000 0 0 -1.576988</pose>
+        <geometry><box><size>12.111882 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_62_visual">
+        <pose>65.991119 -99.986804 0.450000 0 0 -1.576988</pose>
+        <geometry><box><size>12.111882 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_2_1">
+        <pose>66.007978 -97.968227 0.610000 0 1.570796 -1.576988</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_6_2_2">
+        <pose>65.974261 -102.005380 0.610000 0 1.570796 -1.576988</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_63_collision">
+        <pose>65.974256 -112.019289 0.450000 0 0 -1.559554</pose>
+        <geometry><box><size>11.953702 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_63_visual">
+        <pose>65.974256 -112.019289 0.450000 0 0 -1.559554</pose>
+        <geometry><box><size>11.953702 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_3_1">
+        <pose>65.974256 -112.019289 0.610000 0 1.570796 -1.559554</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_64_collision">
+        <pose>66.033779 -123.979227 0.450000 0 0 -1.572280</pose>
+        <geometry><box><size>11.966475 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_64_visual">
+        <pose>66.033779 -123.979227 0.450000 0 0 -1.572280</pose>
+        <geometry><box><size>11.966475 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_4_1">
+        <pose>66.033779 -123.979227 0.610000 0 1.570796 -1.572280</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_65_collision">
+        <pose>66.006738 -135.975056 0.450000 0 0 -1.581887</pose>
+        <geometry><box><size>12.025758 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_65_visual">
+        <pose>66.006738 -135.975056 0.450000 0 0 -1.581887</pose>
+        <geometry><box><size>12.025758 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_5_1">
+        <pose>66.024355 -133.970840 0.610000 0 1.570796 -1.581887</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.70 0.73 0.72 1</ambient><diffuse>0.84 0.85 0.82 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_6_5_2">
+        <pose>65.989122 -137.979271 0.610000 0 1.570796 -1.581887</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_66_collision">
+        <pose>65.995338 -147.996995 0.450000 0 0 -1.568100</pose>
+        <geometry><box><size>12.018871 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_66_visual">
+        <pose>65.995338 -147.996995 0.450000 0 0 -1.568100</pose>
+        <geometry><box><size>12.018871 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_6_2">
+        <pose>66.009155 -150.000092 0.610000 0 1.570796 -1.568100</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_67_collision">
+        <pose>66.003332 -159.979236 0.450000 0 0 -1.571514</pose>
+        <geometry><box><size>11.946084 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_67_visual">
+        <pose>66.003332 -159.979236 0.450000 0 0 -1.571514</pose>
+        <geometry><box><size>11.946084 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_7_1">
+        <pose>66.003332 -159.979236 0.610000 0 1.570796 -1.571514</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_68_collision">
+        <pose>65.996928 -172.015704 0.450000 0 0 -1.564523</pose>
+        <geometry><box><size>12.127160 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_68_visual">
+        <pose>65.996928 -172.015704 0.450000 0 0 -1.564523</pose>
+        <geometry><box><size>12.127160 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="float_row_6_8_1">
+        <pose>65.987910 -169.994531 0.610000 0 1.570796 -1.564523</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <visual name="float_row_6_8_2">
+        <pose>66.005945 -174.036877 0.610000 0 1.570796 -1.564523</pose>
+        <geometry><cylinder><radius>0.300</radius><length>0.900</length></cylinder></geometry>
+        <material><ambient>0.08 0.24 0.42 1</ambient><diffuse>0.12 0.34 0.58 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+      </visual>
+      <collision name="beam_69_collision">
+        <pose>66.013396 -184.034660 0.450000 0 0 -1.570395</pose>
+        <geometry><box><size>11.910891 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_69_visual">
+        <pose>66.013396 -184.034660 0.450000 0 0 -1.570395</pose>
+        <geometry><box><size>11.910891 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_70_collision">
+        <pose>-0.065561 -69.998374 0.450000 0 0 0.007486</pose>
+        <geometry><box><size>12.020970 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_70_visual">
+        <pose>-0.065561 -69.998374 0.450000 0 0 0.007486</pose>
+        <geometry><box><size>12.020970 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_71_collision">
+        <pose>11.951062 -69.953603 0.450000 0 0 0.007240</pose>
+        <geometry><box><size>12.012442 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_71_visual">
+        <pose>11.951062 -69.953603 0.450000 0 0 0.007240</pose>
+        <geometry><box><size>12.012442 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_72_collision">
+        <pose>23.941191 -69.944707 0.450000 0 0 -0.007488</pose>
+        <geometry><box><size>11.967913 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_72_visual">
+        <pose>23.941191 -69.944707 0.450000 0 0 -0.007488</pose>
+        <geometry><box><size>11.967913 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_73_collision">
+        <pose>35.926337 -69.945597 0.450000 0 0 0.000796</pose>
+        <geometry><box><size>12.002423 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_73_visual">
+        <pose>35.926337 -69.945597 0.450000 0 0 0.000796</pose>
+        <geometry><box><size>12.002423 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_74_collision">
+        <pose>47.944840 -69.997341 0.450000 0 0 -0.014961</pose>
+        <geometry><box><size>12.035259 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_74_visual">
+        <pose>47.944840 -69.997341 0.450000 0 0 -0.014961</pose>
+        <geometry><box><size>12.035259 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_75_collision">
+        <pose>60.016827 -70.060309 0.450000 0 0 0.006366</pose>
+        <geometry><box><size>12.109370 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_75_visual">
+        <pose>60.016827 -70.060309 0.450000 0 0 0.006366</pose>
+        <geometry><box><size>12.109370 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_76_collision">
+        <pose>-0.035216 -82.018579 0.450000 0 0 -0.008831</pose>
+        <geometry><box><size>12.018637 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_76_visual">
+        <pose>-0.035216 -82.018579 0.450000 0 0 -0.008831</pose>
+        <geometry><box><size>12.018637 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_77_collision">
+        <pose>11.969165 -82.004657 0.450000 0 0 0.005144</pose>
+        <geometry><box><size>11.991403 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_77_visual">
+        <pose>11.969165 -82.004657 0.450000 0 0 0.005144</pose>
+        <geometry><box><size>11.991403 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_78_collision">
+        <pose>23.963657 -81.953316 0.450000 0 0 -0.006362</pose>
+        <geometry><box><size>11.998412 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_78_visual">
+        <pose>23.963657 -81.953316 0.450000 0 0 -0.006362</pose>
+        <geometry><box><size>11.998412 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_79_collision">
+        <pose>35.991615 -81.954008 0.450000 0 0 0.007595</pose>
+        <geometry><box><size>12.057598 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_79_visual">
+        <pose>35.991615 -81.954008 0.450000 0 0 0.007595</pose>
+        <geometry><box><size>12.057598 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_80_collision">
+        <pose>47.984488 -81.968819 0.450000 0 0 -0.005852</pose>
+        <geometry><box><size>11.928357 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_80_visual">
+        <pose>47.984488 -81.968819 0.450000 0 0 -0.005852</pose>
+        <geometry><box><size>11.928357 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_81_collision">
+        <pose>59.973171 -81.966899 0.450000 0 0 0.009718</pose>
+        <geometry><box><size>12.049357 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_81_visual">
+        <pose>59.973171 -81.966899 0.450000 0 0 0.009718</pose>
+        <geometry><box><size>12.049357 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_82_collision">
+        <pose>-0.018127 -93.986337 0.450000 0 0 0.010990</pose>
+        <geometry><box><size>11.907648 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_82_visual">
+        <pose>-0.018127 -93.986337 0.450000 0 0 0.010990</pose>
+        <geometry><box><size>11.907648 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_83_collision">
+        <pose>11.956924 -93.978274 0.450000 0 0 -0.000401</pose>
+        <geometry><box><size>12.043212 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_83_visual">
+        <pose>11.956924 -93.978274 0.450000 0 0 -0.000401</pose>
+        <geometry><box><size>12.043212 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_84_collision">
+        <pose>24.024619 -93.987733 0.450000 0 0 0.006952</pose>
+        <geometry><box><size>12.092683 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_84_visual">
+        <pose>24.024619 -93.987733 0.450000 0 0 0.006952</pose>
+        <geometry><box><size>12.092683 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_85_collision">
+        <pose>36.029206 -94.000245 0.450000 0 0 -0.001518</pose>
+        <geometry><box><size>11.917043 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_85_visual">
+        <pose>36.029206 -94.000245 0.450000 0 0 -0.001518</pose>
+        <geometry><box><size>11.917043 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_86_collision">
+        <pose>48.023414 -94.056377 0.450000 0 0 0.003868</pose>
+        <geometry><box><size>12.071753 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_86_visual">
+        <pose>48.023414 -94.056377 0.450000 0 0 0.003868</pose>
+        <geometry><box><size>12.071753 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_87_collision">
+        <pose>60.050490 -93.998547 0.450000 0 0 0.012834</pose>
+        <geometry><box><size>11.983173 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_87_visual">
+        <pose>60.050490 -93.998547 0.450000 0 0 0.012834</pose>
+        <geometry><box><size>11.983173 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_88_collision">
+        <pose>-0.024747 -106.059174 0.450000 0 0 0.003653</pose>
+        <geometry><box><size>12.082688 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_88_visual">
+        <pose>-0.024747 -106.059174 0.450000 0 0 0.003653</pose>
+        <geometry><box><size>12.082688 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_89_collision">
+        <pose>11.985059 -106.017414 0.450000 0 0 0.006464</pose>
+        <geometry><box><size>11.937169 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_89_visual">
+        <pose>11.985059 -106.017414 0.450000 0 0 0.006464</pose>
+        <geometry><box><size>11.937169 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_90_collision">
+        <pose>23.961935 -106.019724 0.450000 0 0 -0.002124</pose>
+        <geometry><box><size>12.017100 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_90_visual">
+        <pose>23.961935 -106.019724 0.450000 0 0 -0.002124</pose>
+        <geometry><box><size>12.017100 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_91_collision">
+        <pose>35.975704 -105.995192 0.450000 0 0 0.011496</pose>
+        <geometry><box><size>12.011415 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_91_visual">
+        <pose>35.975704 -105.995192 0.450000 0 0 0.011496</pose>
+        <geometry><box><size>12.011415 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_92_collision">
+        <pose>48.001646 -105.948958 0.450000 0 0 0.002425</pose>
+        <geometry><box><size>12.041231 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_92_visual">
+        <pose>48.001646 -105.948958 0.450000 0 0 0.002425</pose>
+        <geometry><box><size>12.041231 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_93_collision">
+        <pose>59.981387 -106.005142 0.450000 0 0 -0.002872</pose>
+        <geometry><box><size>11.918545 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_93_visual">
+        <pose>59.981387 -106.005142 0.450000 0 0 -0.002872</pose>
+        <geometry><box><size>11.918545 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_94_collision">
+        <pose>-0.019238 -118.018324 0.450000 0 0 -0.005442</pose>
+        <geometry><box><size>12.112146 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_94_visual">
+        <pose>-0.019238 -118.018324 0.450000 0 0 -0.005442</pose>
+        <geometry><box><size>12.112146 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_95_collision">
+        <pose>12.053311 -118.005928 0.450000 0 0 0.003820</pose>
+        <geometry><box><size>12.033418 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_95_visual">
+        <pose>12.053311 -118.005928 0.450000 0 0 0.003820</pose>
+        <geometry><box><size>12.033418 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_96_collision">
+        <pose>24.026583 -117.993793 0.450000 0 0 -0.008746</pose>
+        <geometry><box><size>11.913599 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_96_visual">
+        <pose>24.026583 -117.993793 0.450000 0 0 -0.008746</pose>
+        <geometry><box><size>11.913599 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_97_collision">
+        <pose>35.993980 -118.052125 0.450000 0 0 -0.002612</pose>
+        <geometry><box><size>12.021481 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_97_visual">
+        <pose>35.993980 -118.052125 0.450000 0 0 -0.002612</pose>
+        <geometry><box><size>12.021481 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_98_collision">
+        <pose>47.974556 -118.048407 0.450000 0 0 0.008899</pose>
+        <geometry><box><size>11.939957 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_98_visual">
+        <pose>47.974556 -118.048407 0.450000 0 0 0.008899</pose>
+        <geometry><box><size>11.939957 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_99_collision">
+        <pose>59.976211 -118.006740 0.450000 0 0 0.002071</pose>
+        <geometry><box><size>12.063533 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_99_visual">
+        <pose>59.976211 -118.006740 0.450000 0 0 0.002071</pose>
+        <geometry><box><size>12.063533 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_100_collision">
+        <pose>0.038278 -129.980389 0.450000 0 0 -0.002439</pose>
+        <geometry><box><size>12.074949 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_100_visual">
+        <pose>0.038278 -129.980389 0.450000 0 0 -0.002439</pose>
+        <geometry><box><size>12.074949 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_101_collision">
+        <pose>12.046580 -130.014741 0.450000 0 0 -0.004645</pose>
+        <geometry><box><size>11.941776 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_101_visual">
+        <pose>12.046580 -130.014741 0.450000 0 0 -0.004645</pose>
+        <geometry><box><size>11.941776 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_102_collision">
+        <pose>24.005439 -130.045007 0.450000 0 0 -0.009460</pose>
+        <geometry><box><size>11.976031 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_102_visual">
+        <pose>24.005439 -130.045007 0.450000 0 0 -0.009460</pose>
+        <geometry><box><size>11.976031 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_103_collision">
+        <pose>36.025571 -130.070850 0.450000 0 0 -0.003742</pose>
+        <geometry><box><size>12.064312 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_103_visual">
+        <pose>36.025571 -130.070850 0.450000 0 0 -0.003742</pose>
+        <geometry><box><size>12.064312 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_104_collision">
+        <pose>48.032013 -130.058687 0.450000 0 0 -0.000395</pose>
+        <geometry><box><size>11.948622 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_104_visual">
+        <pose>48.032013 -130.058687 0.450000 0 0 -0.000395</pose>
+        <geometry><box><size>11.948622 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_105_collision">
+        <pose>60.032945 -130.002205 0.450000 0 0 0.004086</pose>
+        <geometry><box><size>12.053551 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_105_visual">
+        <pose>60.032945 -130.002205 0.450000 0 0 0.004086</pose>
+        <geometry><box><size>12.053551 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_106_collision">
+        <pose>-0.019930 -141.952406 0.450000 0 0 -0.004111</pose>
+        <geometry><box><size>12.056644 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_106_visual">
+        <pose>-0.019930 -141.952406 0.450000 0 0 -0.004111</pose>
+        <geometry><box><size>12.056644 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_107_collision">
+        <pose>12.022493 -141.963974 0.450000 0 0 -0.002290</pose>
+        <geometry><box><size>12.028380 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_107_visual">
+        <pose>12.022493 -141.963974 0.450000 0 0 -0.002290</pose>
+        <geometry><box><size>12.028380 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_108_collision">
+        <pose>23.998060 -141.954882 0.450000 0 0 -0.005010</pose>
+        <geometry><box><size>11.922810 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_108_visual">
+        <pose>23.998060 -141.954882 0.450000 0 0 -0.005010</pose>
+        <geometry><box><size>11.922810 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_109_collision">
+        <pose>35.997388 -141.942109 0.450000 0 0 0.006065</pose>
+        <geometry><box><size>12.075923 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_109_visual">
+        <pose>35.997388 -141.942109 0.450000 0 0 0.006065</pose>
+        <geometry><box><size>12.075923 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_110_collision">
+        <pose>48.020086 -141.983209 0.450000 0 0 -0.007372</pose>
+        <geometry><box><size>11.970170 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_110_visual">
+        <pose>48.020086 -141.983209 0.450000 0 0 -0.007372</pose>
+        <geometry><box><size>11.970170 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_111_collision">
+        <pose>59.979372 -142.016141 0.450000 0 0 -0.001324</pose>
+        <geometry><box><size>11.949166 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_111_visual">
+        <pose>59.979372 -142.016141 0.450000 0 0 -0.001324</pose>
+        <geometry><box><size>11.949166 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_112_collision">
+        <pose>0.013077 -154.038343 0.450000 0 0 -0.003681</pose>
+        <geometry><box><size>12.011807 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_112_visual">
+        <pose>0.013077 -154.038343 0.450000 0 0 -0.003681</pose>
+        <geometry><box><size>12.011807 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_113_collision">
+        <pose>11.999838 -153.999425 0.450000 0 0 0.009503</pose>
+        <geometry><box><size>11.962224 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_113_visual">
+        <pose>11.999838 -153.999425 0.450000 0 0 0.009503</pose>
+        <geometry><box><size>11.962224 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_114_collision">
+        <pose>23.971376 -153.977982 0.450000 0 0 -0.006490</pose>
+        <geometry><box><size>11.981495 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_114_visual">
+        <pose>23.971376 -153.977982 0.450000 0 0 -0.006490</pose>
+        <geometry><box><size>11.981495 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_115_collision">
+        <pose>35.983977 -154.019446 0.450000 0 0 -0.005692</pose>
+        <geometry><box><size>12.043892 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_115_visual">
+        <pose>35.983977 -154.019446 0.450000 0 0 -0.005692</pose>
+        <geometry><box><size>12.043892 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_116_collision">
+        <pose>47.988890 -153.974583 0.450000 0 0 0.007992</pose>
+        <geometry><box><size>11.966446 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_116_visual">
+        <pose>47.988890 -153.974583 0.450000 0 0 0.007992</pose>
+        <geometry><box><size>11.966446 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_117_collision">
+        <pose>60.004327 -153.963189 0.450000 0 0 -0.001492</pose>
+        <geometry><box><size>12.065232 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_117_visual">
+        <pose>60.004327 -153.963189 0.450000 0 0 -0.001492</pose>
+        <geometry><box><size>12.065232 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_118_collision">
+        <pose>0.013329 -166.006572 0.450000 0 0 -0.007377</pose>
+        <geometry><box><size>11.998533 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_118_visual">
+        <pose>0.013329 -166.006572 0.450000 0 0 -0.007377</pose>
+        <geometry><box><size>11.998533 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_119_collision">
+        <pose>12.017388 -166.068098 0.450000 0 0 0.001027</pose>
+        <geometry><box><size>12.010041 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_119_visual">
+        <pose>12.017388 -166.068098 0.450000 0 0 0.001027</pose>
+        <geometry><box><size>12.010041 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_120_collision">
+        <pose>24.043026 -166.045929 0.450000 0 0 0.010362</pose>
+        <geometry><box><size>12.041426 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_120_visual">
+        <pose>24.043026 -166.045929 0.450000 0 0 0.010362</pose>
+        <geometry><box><size>12.041426 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_121_collision">
+        <pose>36.043103 -165.988113 0.450000 0 0 0.007960</pose>
+        <geometry><box><size>11.959010 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_121_visual">
+        <pose>36.043103 -165.988113 0.450000 0 0 0.007960</pose>
+        <geometry><box><size>11.959010 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_122_collision">
+        <pose>48.045605 -165.942904 0.450000 0 0 0.001615</pose>
+        <geometry><box><size>12.046167 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_122_visual">
+        <pose>48.045605 -165.942904 0.450000 0 0 0.001615</pose>
+        <geometry><box><size>12.046167 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_123_collision">
+        <pose>60.019265 -165.937650 0.450000 0 0 -0.009341</pose>
+        <geometry><box><size>11.901254 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_123_visual">
+        <pose>60.019265 -165.937650 0.450000 0 0 -0.009341</pose>
+        <geometry><box><size>11.901254 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_124_collision">
+        <pose>-0.075814 -178.041120 0.450000 0 0 -0.000672</pose>
+        <geometry><box><size>12.006304 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_124_visual">
+        <pose>-0.075814 -178.041120 0.450000 0 0 -0.000672</pose>
+        <geometry><box><size>12.006304 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_125_collision">
+        <pose>11.978435 -178.020922 0.450000 0 0 0.005491</pose>
+        <geometry><box><size>12.102229 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_125_visual">
+        <pose>11.978435 -178.020922 0.450000 0 0 0.005491</pose>
+        <geometry><box><size>12.102229 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_126_collision">
+        <pose>23.992315 -177.996508 0.450000 0 0 0.007049</pose>
+        <geometry><box><size>11.925580 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_126_visual">
+        <pose>23.992315 -177.996508 0.450000 0 0 0.007049</pose>
+        <geometry><box><size>11.925580 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_127_collision">
+        <pose>35.972327 -177.960876 0.450000 0 0 0.010158</pose>
+        <geometry><box><size>12.034559 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_127_visual">
+        <pose>35.972327 -177.960876 0.450000 0 0 0.010158</pose>
+        <geometry><box><size>12.034559 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_128_collision">
+        <pose>48.021314 -177.999222 0.450000 0 0 -0.011305</pose>
+        <geometry><box><size>12.064129 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_128_visual">
+        <pose>48.021314 -177.999222 0.450000 0 0 -0.011305</pose>
+        <geometry><box><size>12.064129 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_129_collision">
+        <pose>60.038523 -178.069910 0.450000 0 0 0.001900</pose>
+        <geometry><box><size>11.970928 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_129_visual">
+        <pose>60.038523 -178.069910 0.450000 0 0 0.001900</pose>
+        <geometry><box><size>11.970928 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_130_collision">
+        <pose>-0.000998 -190.002697 0.450000 0 0 0.008392</pose>
+        <geometry><box><size>11.934958 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_130_visual">
+        <pose>-0.000998 -190.002697 0.450000 0 0 0.008392</pose>
+        <geometry><box><size>11.934958 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_131_collision">
+        <pose>12.005231 -190.005660 0.450000 0 0 -0.006705</pose>
+        <geometry><box><size>12.078259 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_131_visual">
+        <pose>12.005231 -190.005660 0.450000 0 0 -0.006705</pose>
+        <geometry><box><size>12.078259 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_132_collision">
+        <pose>24.022842 -190.067231 0.450000 0 0 -0.005972</pose>
+        <geometry><box><size>11.957390 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_132_visual">
+        <pose>24.022842 -190.067231 0.450000 0 0 -0.005972</pose>
+        <geometry><box><size>11.957390 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_133_collision">
+        <pose>36.037067 -190.036101 0.450000 0 0 0.003290</pose>
+        <geometry><box><size>12.071400 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_133_visual">
+        <pose>36.037067 -190.036101 0.450000 0 0 0.003290</pose>
+        <geometry><box><size>12.071400 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_134_collision">
+        <pose>48.000939 -189.980899 0.450000 0 0 0.001077</pose>
+        <geometry><box><size>11.856681 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_134_visual">
+        <pose>48.000939 -189.980899 0.450000 0 0 0.001077</pose>
+        <geometry><box><size>11.856681 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <collision name="beam_135_collision">
+        <pose>59.966040 -189.979649 0.450000 0 0 -0.008307</pose>
+        <geometry><box><size>12.073562 0.250000 0.200000</size></box></geometry>
+      </collision>
+      <visual name="beam_135_visual">
+        <pose>59.966040 -189.979649 0.450000 0 0 -0.008307</pose>
+        <geometry><box><size>12.073562 0.250000 0.200000</size></box></geometry>
+        <material><ambient>0.62 0.64 0.63 1</ambient><diffuse>0.76 0.78 0.77 1</diffuse><specular>0.08 0.08 0.08 1</specular></material>
+      </visual>
+      <visual name="net_row_1">
+        <geometry><mesh><uri>model://fish_farm/meshes/net_row_1.obj</uri></mesh></geometry>
+        <transparency>0.18</transparency>
+        <cast_shadows>false</cast_shadows>
+        <material><ambient>0.05 0.26 0.14 1</ambient><diffuse>0.08 0.42 0.20 1</diffuse><specular>0.01 0.03 0.01 1</specular></material>
+      </visual>
+      <visual name="net_row_3">
+        <geometry><mesh><uri>model://fish_farm/meshes/net_row_3.obj</uri></mesh></geometry>
+        <transparency>0.18</transparency>
+        <cast_shadows>false</cast_shadows>
+        <material><ambient>0.05 0.26 0.14 1</ambient><diffuse>0.08 0.42 0.20 1</diffuse><specular>0.01 0.03 0.01 1</specular></material>
+      </visual>
+      <visual name="net_row_5">
+        <geometry><mesh><uri>model://fish_farm/meshes/net_row_5.obj</uri></mesh></geometry>
+        <transparency>0.18</transparency>
+        <cast_shadows>false</cast_shadows>
+        <material><ambient>0.05 0.26 0.14 1</ambient><diffuse>0.08 0.42 0.20 1</diffuse><specular>0.01 0.03 0.01 1</specular></material>
+      </visual>
+    </link>
+  </model>
+</sdf>

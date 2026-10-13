@@ -1,0 +1,10 @@
+std_msgs/Header header
+uint64 frame_seq
+int32 cage_id
+string observation_source
+string camera_frame
+int32 local_rows
+int32 local_cols
+bool orientation_normalized
+geometry_msgs/Point[] fov_polygon_uv
+cage_msgs/LocalLatticeCell[] cells

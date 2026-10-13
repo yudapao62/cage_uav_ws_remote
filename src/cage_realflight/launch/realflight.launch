@@ -1,0 +1,18 @@
+<launch>
+  <arg name="start_rviz" default="true"/>
+  <arg name="start_web" default="true"/>
+  <arg name="start_mavros" default="false"/>
+  <arg name="fcu_url" default="serial:///dev/ttyUSB0:921600"/>
+  <arg name="feeder_mode" default="dry_run"/>
+  <arg name="auto_start_task" default="false"/>
+  <param name="/realflight/auto_start_task" value="$(arg auto_start_task)"/>
+  <include file="$(find cage_realflight)/launch/realflight_core.launch">
+    <arg name="start_mavros" value="$(arg start_mavros)"/>
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+    <arg name="feeder_mode" value="$(arg feeder_mode)"/>
+  </include>
+  <include file="$(find cage_realflight)/launch/realflight_ui.launch">
+    <arg name="start_rviz" value="$(arg start_rviz)"/>
+    <arg name="start_web" value="$(arg start_web)"/>
+  </include>
+</launch>

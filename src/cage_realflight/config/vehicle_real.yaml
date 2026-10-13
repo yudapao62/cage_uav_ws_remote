@@ -1,0 +1,12 @@
+vehicle:
+  fcu_url: "serial:///dev/ttyUSB0:921600"
+  auto_arm: false
+  auto_mode: AUTO
+  prearm_mode: STABILIZE
+  rtl_mode: RTL
+  home_reference: stable_uav_gps
+  require_rc_ready: true
+  takeoff_relative_alt: 20.0
+  cruise_relative_alt: 30.0
+  feed_relative_alt: 15.0
+  manual_modes: [STABILIZE, LOITER, POSHOLD, ALT_HOLD, MANUAL]

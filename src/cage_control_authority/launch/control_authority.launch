@@ -1,0 +1,14 @@
+<launch>
+  <arg name="use_keyboard" default="true"/>
+  <arg name="use_joystick" default="false"/>
+  <arg name="config" default="$(find cage_control_authority)/config/manual_control.yaml"/>
+
+  <rosparam command="load" file="$(arg config)"/>
+  <node pkg="cage_control_authority" type="control_authority_manager.py"
+        name="control_authority_manager" output="screen" required="true"/>
+  <node pkg="cage_control_authority" type="joystick_rc_bridge.py"
+        name="joystick_rc_bridge" output="screen" required="true"/>
+  <node if="$(arg use_keyboard)" pkg="cage_control_authority" type="keyboard_joy_node.py"
+        name="keyboard_joy_node" output="screen"/>
+  <node if="$(arg use_joystick)" pkg="joy" type="joy_node" name="joy_node" output="screen"/>
+</launch>

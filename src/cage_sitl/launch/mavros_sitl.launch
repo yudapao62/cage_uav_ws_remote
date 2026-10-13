@@ -1,0 +1,10 @@
+<launch>
+  <!-- SYSID 255 matches ArduPilot MAV_GCS_SYSID without changing FCU parameters. -->
+  <arg name="fcu_url" default="tcp://127.0.0.1:5760/?ids=255,240"/>
+  <arg name="gcs_url" default=""/>
+  <param name="/simulation/backend" value="sitl"/>
+  <include file="$(find mavros)/launch/apm.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+    <arg name="gcs_url" value="$(arg gcs_url)"/>
+  </include>
+</launch>

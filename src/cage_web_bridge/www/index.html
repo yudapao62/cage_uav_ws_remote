@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CAGE_0 Scout &amp; Feeding</title>
+  <style>
+    :root{color-scheme:dark;--bg:#172025;--card:#223039;--line:#3c4d55;--text:#edf5f2;--muted:#9fb0b5;--green:#168447;--red:#8a2730;--blue:#276d92}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    main{display:grid;grid-template-columns:minmax(330px,420px) minmax(330px,420px) minmax(420px,1fr);gap:18px;padding:18px;align-items:start}
+    section{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;min-width:0}h2{margin-top:0}.subtle{color:var(--muted);font-size:13px}.row{display:flex;gap:8px;align-items:center;margin:10px 0;flex-wrap:wrap}.row label{min-width:78px}
+    input,select,button{background:#10181c;color:var(--text);border:1px solid #52656d;border-radius:6px;padding:8px}input,select{min-width:90px}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.primary{background:var(--green);border-color:#34b569}.danger{background:var(--red);border-color:#b94b54}.secondary{background:var(--blue)}
+    .toolbar{display:flex;gap:8px;flex-wrap:wrap}.status{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;line-height:1.45;overflow-wrap:anywhere}.mode{font-weight:700;color:#9debc0}.hidden{display:none!important}
+    .flight-banner{display:none;background:#a73532;color:white;padding:12px 18px;font-weight:800;font-size:24px}.flight-banner small{font-size:15px;margin-left:20px}.manual{background:#b06816;border-color:#e39b3d;padding:8px;border-radius:6px;margin:8px 0;font-weight:700}
+    .progress{height:9px;background:#11191d;border-radius:5px;overflow:hidden;margin:8px 0 12px}.progress>span{display:block;height:100%;width:0;background:#36b56c;transition:width .2s}.checks{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:10px 0}.check{padding:7px;border:1px solid #465b64;border-radius:5px;color:#aebfc4}.check.done{border-color:#2a9e59;color:#a8efc2;background:#19382a}.error{color:#ffb2b6}.output{font-size:12px;color:#bdcbd0;overflow-wrap:anywhere}
+    .grid{display:grid;gap:5px}.cell{height:34px;border:1px solid #66777e;background:#2b3a41;color:#dbe9e5}.cell.on{background:#28a745;color:#07130b}.cell.confirmed{border-color:#48d17b}
+    .maps-card{grid-column:1/-1}.maps{width:100%;border-collapse:collapse;font-size:12px}.maps th,.maps td{border:1px solid var(--line);padding:7px;text-align:left;overflow-wrap:anywhere}.maps .warn{color:#ffd27a}.maps .bad{color:#ff9da3}
+    @media(max-width:1200px){main{grid-template-columns:1fr 1fr}.cells-card{grid-column:1/-1}}@media(max-width:760px){main{grid-template-columns:1fr;padding:10px}.cells-card{grid-column:auto}}
+  </style>
+</head>
+<body>
+  <div id="flight-banner" class="flight-banner">REAL FLIGHT <small id="flight-detail"></small></div>
+  <main>
+    <section id="scout-card">
+      <h2>Scout 网箱探测</h2>
+      <p class="subtle">独立侦察任务。完成航线后自动冻结地图、返航、降落并上锁。</p>
+      <div class="row">
+        <label for="scout-cage">目标网箱</label>
+        <select id="scout-cage"><option value="0">CAGE_0</option></select>
+      </div>
+      <div class="row">
+        <label for="scout-alt">侦察高度</label>
+        <input id="scout-alt" type="number" min="1" max="120" step="0.5" value="25">
+        <span>m</span>
+      </div>
+      <div class="toolbar">
+        <button id="scout-start" class="primary" onclick="startScout()">开始 Scout 探测</button>
+        <button id="scout-cancel" class="danger" onclick="cancelScout()">安全取消并返航</button>
+      </div>
+      <div id="manual-warning" class="manual hidden">人工控制中：系统不会自动抢回 AUTO。</div>
+      <h3>Scout 状态：<span id="scout-state">IDLE</span></h3>
+      <div id="scout-progress-label" class="status">航点 0/0 · 网格 0/60</div>
+      <div class="progress"><span id="scout-progress"></span></div>
+      <div class="checks">
+        <div id="check-route" class="check">○ 航线完成</div>
+        <div id="check-map" class="check">○ 地图冻结</div>
+        <div id="check-rtl" class="check">○ RTL 接受</div>
+        <div id="check-home" class="check">○ 返回 Home</div>
+        <div id="check-land" class="check">○ 已落地</div>
+        <div id="check-disarm" class="check">○ 已上锁</div>
+      </div>
+      <div id="scout-detail" class="status">等待后端状态…</div>
+      <p id="scout-output" class="output"></p>
+    </section>
+
+    <section id="feeding-card">
+      <h2>CAGE_0 Feeding Task</h2>
+      <div class="mode" id="geometry-mode">Loading geometry…</div>
+      <div id="rect-controls">
+        <div class="row"><label for="mode">Mode</label><select id="mode"><option>FULL_GRID</option><option>ROW_OR_COLUMN</option><option>SELECTED_CELLS</option></select></div>
+        <div class="row"><label for="feed-row">Row</label><input id="feed-row" type="number" min="1" value="1"><label for="feed-col">Column</label><input id="feed-col" type="number" min="1" value="1"></div>
+      </div>
+      <div id="circle-info" class="status hidden"></div>
+      <div class="row"><label for="repeat">Repeat</label><input id="repeat" type="number" min="1" value="1"><label for="feed-alt">Feed Alt</label><input id="feed-alt" type="number" value="15"></div>
+      <div class="toolbar">
+        <button id="feed-preview" onclick="sendFeeding('preview')">Preview</button>
+        <button id="feed-start" class="primary" onclick="sendFeeding('start')">Start Task</button>
+        <button id="feed-cancel" class="danger" onclick="cancelFeeding()">Cancel</button>
+      </div>
+      <h3>Beacon / Precheck</h3><div id="beacon-status" class="status">loading...</div>
+      <h3>Feeding Status</h3><div id="feeding-status" class="status">loading...</div>
+    </section>
+
+    <section class="cells-card">
+      <h2 id="target-title">Cells</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+    <section class="maps-card">
+      <div class="row"><h2 style="margin:0">历史 Scout 地图</h2><button onclick="loadMaps(true)">重新校验</button></div>
+      <p class="subtle">Feeding 只使用已完整校验并激活的冻结地图。Legacy 图仅限仿真。</p>
+      <div id="active-map" class="status">当前没有激活地图</div>
+      <table class="maps"><thead><tr><th>任务</th><th>地图</th><th>质量</th><th>校验</th><th>操作</th></tr></thead><tbody id="maps-body"></tbody></table>
+    </section>
+  </main>
+  <script>
+    'use strict';
+    let grid = {rows:0, cols:0, geometry_mode:'rectangular'};
+    let selected = new Set();
+    let scoutSubmitting = false;
+    let scoutRetryTaskId = '';
+    let lastMapsLoad = 0;
+
+    const element = id => document.getElementById(id);
+    const terminalScoutStates = new Set(['IDLE','COMPLETED','FAILED','CANCELED','CANCELLED']);
+
+    async function postJson(path, payload) {
+      const response = await fetch(path, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(payload || {})
+      });
+      const text = await response.text();
+      let value = {};
+      try { value = text ? JSON.parse(text) : {}; } catch (_) { value = {error:text}; }
+      if (!response.ok) throw new Error(value.error || `HTTP ${response.status}`);
+      return value;
+    }
+
+    async function loadGrid() {
+      grid = await (await fetch('/api/grid')).json();
+      const container = element('grid');
+      container.innerHTML = '';
+      if (grid.geometry_mode === 'circular') {
+        element('target-title').textContent = 'Circular center target';
+        return;
+      }
+      container.style.gridTemplateColumns = `repeat(${grid.cols},1fr)`;
+      const confirmed = new Set(grid.confirmed_cell_ids || []);
+      grid.cell_ids.forEach(id => {
+        const button = document.createElement('button');
+        button.className = 'cell' + (confirmed.has(id) ? ' confirmed' : '');
+        button.textContent = id;
+        button.onclick = () => {
+          selected.has(id) ? selected.delete(id) : selected.add(id);
+          button.classList.toggle('on');
+        };
+        container.appendChild(button);
+      });
+    }
+
+    function feedingPayload() {
+      const circular = grid.geometry_mode === 'circular';
+      const mode = circular ? 'CENTER_FEED' : element('mode').value;
+      let rows = [], cols = [], ids = [];
+      if (!circular && mode === 'ROW_OR_COLUMN') {
+        const row = Number(element('feed-row').value);
+        const col = Number(element('feed-col').value);
+        rows = row ? [row] : [];
+        cols = !row && col ? [col] : [];
+      }
+      if (!circular && mode === 'SELECTED_CELLS') ids = [...selected];
+      return {
+        task_id:`web-${Date.now()}`,
+        cage_id:0,
+        mode,
+        rows,
+        cols,
+        selected_cell_ids:ids,
+        repeat_count:Number(element('repeat').value),
+        feed_relative_alt:Number(element('feed-alt').value),
+        transit_relative_alt:25
+      };
+    }
+
+    async function sendFeeding(kind) {
+      try { await postJson(`/api/${kind}`, feedingPayload()); }
+      catch (error) { alert(error.message); }
+      await refresh();
+    }
+
+    async function cancelFeeding() {
+      try { await postJson('/api/cancel', {}); }
+      catch (error) { alert(error.message); }
+      await refresh();
+    }
+
+    async function startScout() {
+      if (scoutSubmitting) return;
+      scoutSubmitting = true;
+      element('scout-start').disabled = true;
+      if (!scoutRetryTaskId) scoutRetryTaskId = `scout-web-${Date.now()}`;
+      const payload = {
+        task_id:scoutRetryTaskId,
+        cage_id:Number(element('scout-cage').value),
+        survey_relative_alt:Number(element('scout-alt').value),
+        auto_rtl:true,
+        auto_land:true
+      };
+      try {
+        await postJson('/api/scout/start', payload);
+        scoutRetryTaskId = '';
+      } catch (error) {
+        alert(error.message);
+      } finally {
+        scoutSubmitting = false;
+        await refresh();
+      }
+    }
+
+    async function cancelScout() {
+      if (scoutSubmitting) return;
+      scoutSubmitting = true;
+      try { await postJson('/api/scout/cancel', {}); }
+      catch (error) { alert(error.message); }
+      finally { scoutSubmitting = false; await refresh(); }
+    }
+
+    async function activateMap(map) {
+      try {
+        await postJson('/api/scout/maps/activate', {
+          task_id:map.task_id,cage_id:map.cage_id,
+          expected_map_uuid:map.map_uuid,
+          expected_map_version:map.map_version,
+          expected_map_sha256:map.map_sha256,
+          expected_manifest_sha256:map.manifest_sha256
+        });
+        await loadMaps(true);
+      } catch (error) { alert(error.message); }
+    }
+
+    async function loadMaps(force=false) {
+      if (!force && Date.now()-lastMapsLoad < 10000) return;
+      lastMapsLoad=Date.now();
+      const [catalog,active] = await Promise.all([
+        fetch('/api/scout/maps?cage_id=0&include_invalid=true').then(r=>r.json()),
+        fetch('/api/scout/maps/active').then(r=>r.json())
+      ]);
+      element('active-map').textContent=JSON.stringify(active,null,2);
+      const body=element('maps-body'); body.innerHTML='';
+      (catalog.maps || []).forEach(map=>{
+        const tr=document.createElement('tr');
+        const legacy=map.legacy_reference_assumed || map.legacy_environment_assumed;
+        const valid=map.validation_state===1 && map.compatibility_state===1;
+        tr.innerHTML=`<td>${map.task_id}</td><td>UUID ${map.map_uuid}<br>v${map.map_version}<br>${map.map_sha256 || ''}</td><td>${map.confirmed_cells}/${map.expected_cells}<br>${(100*(map.coverage||0)).toFixed(1)}%</td><td class="${valid?(legacy?'warn':''):'bad'}">${valid?'FULL_VALID':(map.validation_code||'INVALID')}${legacy?'<br>LEGACY SIM PROFILE':''}</td><td></td>`;
+        const button=document.createElement('button'); button.textContent=map.active?'已激活':'激活';
+        button.disabled=map.active || !valid; button.onclick=()=>activateMap(map);
+        tr.lastElementChild.appendChild(button); body.appendChild(tr);
+      });
+    }
+
+    function setCheck(id, label, done) {
+      const node = element(id);
+      node.textContent = `${done ? '✓' : '○'} ${label}`;
+      node.classList.toggle('done', Boolean(done));
+    }
+
+    function renderScout(task, manualOverride) {
+      task = task || {};
+      const state = task.state || 'IDLE';
+      const waypoints = task.waypoints || {reached:0,total:0};
+      const map = task.map || {confirmed:0,expected:0,coverage:0};
+      const coverage = Number(map.coverage || 0);
+      const percent = Math.max(0, Math.min(100, coverage * 100));
+      element('scout-state').textContent = state;
+      element('scout-progress-label').textContent =
+        `航点 ${waypoints.reached || 0}/${waypoints.total || 0} · 网格 ${map.confirmed || 0}/${map.expected || 0} · 覆盖率 ${percent.toFixed(1)}%`;
+      element('scout-progress').style.width = `${percent}%`;
+      setCheck('check-route', '航线完成', task.route_completed);
+      setCheck('check-map', '地图冻结', task.map_finalized);
+      setCheck('check-rtl', 'RTL 接受', task.rtl_accepted);
+      setCheck('check-home', '返回 Home', task.returned_home);
+      setCheck('check-land', '已落地', task.landed);
+      setCheck('check-disarm', '已上锁', task.disarmed);
+      element('manual-warning').classList.toggle('hidden', !manualOverride);
+      element('scout-start').disabled = scoutSubmitting || !task.can_start;
+      element('scout-cancel').disabled = scoutSubmitting || !task.can_cancel;
+      const scoutActive = !terminalScoutStates.has(state);
+      element('feed-preview').disabled = scoutActive;
+      element('feed-start').disabled = scoutActive;
+      element('scout-detail').textContent = JSON.stringify({
+        task_id:task.task_id || '',
+        mission_id:task.mission_id || '',
+        cage_id:task.cage_id,
+        map_uuid:map.uuid || '',
+        map_version:map.version || 0,
+        map_age_sec:map.age_sec,
+        offset_top1:map.offset_top1 || null,
+        map_ready_for_feeding:Boolean(map.ready_for_feeding),
+        rtl_commanded:Boolean(task.rtl_commanded),
+        home_horizontal_error_m:task.home_horizontal_error_m,
+        reason:task.reason || '',
+        error_code:task.error_code || ''
+      }, null, 2);
+      element('scout-detail').classList.toggle('error', Boolean(task.error_code));
+      element('scout-output').textContent = task.output_directory ?
+        `输出目录：${task.output_directory}` : '';
+    }
+
+    async function refresh() {
+      try {
+        const status = await (await fetch('/api/status')).json();
+        const circular = status.geometry_mode === 'circular';
+        element('geometry-mode').textContent = 'Cage geometry: ' +
+          (circular ? 'Circular center feeding' : 'Rectangular persistent lattice');
+        element('rect-controls').classList.toggle('hidden', circular);
+        element('circle-info').classList.toggle('hidden', !circular);
+        if (circular) {
+          const anchors = status.beacon.anchors || {};
+          const target = status.feeding_target || {};
+          element('circle-info').textContent = JSON.stringify({
+            task_mode:'CENTER_FEED', anchor_a:anchors.A || null,
+            anchor_b:anchors.B || null,
+            center:{lat:target.lat,lon:target.lon},
+            diameter_m:target.diameter_m,
+            feeding_dwell_sec:status.feeding_dwell_sec
+          }, null, 2);
+        }
+        element('feeding-status').textContent = JSON.stringify({
+          geometry_mode:status.geometry_mode,
+          task_mode:status.task_mode,
+          task_state:status.task_state,
+          task_id:status.task_id,
+          fsm:status.fsm,
+          message:status.message,
+          persistent_lattice:status.persistent_lattice
+        }, null, 2);
+        const banner = element('flight-banner');
+        banner.style.display = status.real_flight ? 'block' : 'none';
+        element('flight-detail').textContent = status.real_flight ?
+          `FCU: ${status.fcu_label} · AUTO ARM: ${status.auto_arm ? 'ENABLED' : 'DISABLED'}` : '';
+        element('beacon-status').textContent = status.real_flight ? JSON.stringify({
+          scene_id:status.beacon.scene_id,
+          geometry:status.beacon.state,
+          precheck:status.precheck.checks,
+          start_ready:status.precheck.ready
+        }, null, 2) : 'Simulation';
+        renderScout(status.scout_task, status.manual_override);
+        loadMaps(false).catch(()=>{});
+      } catch (error) {
+        element('scout-detail').textContent = `状态读取失败：${error.message}`;
+        element('scout-detail').classList.add('error');
+      }
+    }
+
+    loadGrid().catch(error => { element('grid').textContent = error.message; });
+    refresh();
+    loadMaps(true).catch(error => { element('active-map').textContent=error.message; });
+    setInterval(refresh, 1000);
+  </script>
+</body>
+</html>

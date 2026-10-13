@@ -1,0 +1,15 @@
+<launch>
+  <arg name="fcu_url" default="tcp://127.0.0.1:5760/?ids=255,240"/>
+  <arg name="use_keyboard" default="true"/>
+  <arg name="use_joystick" default="false"/>
+  <arg name="config" default="$(find cage_sitl)/config/sitl_manual.yaml"/>
+  <rosparam command="load" file="$(arg config)"/>
+  <include file="$(find cage_sitl)/launch/mavros_sitl.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+  </include>
+  <include file="$(find cage_control_authority)/launch/control_authority.launch">
+    <arg name="config" value="$(arg config)"/>
+    <arg name="use_keyboard" value="$(arg use_keyboard)"/>
+    <arg name="use_joystick" value="$(arg use_joystick)"/>
+  </include>
+</launch>

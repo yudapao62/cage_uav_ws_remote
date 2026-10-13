@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<package format="2"><name>cage_mission_fsm</name><version>0.1.0</version><description>Safety-first mission finite state machine.</description><maintainer email="ubuntu@example.com">ubuntu</maintainer><license>MIT</license><buildtool_depend>catkin</buildtool_depend><depend>rospy</depend><depend>mavros_msgs</depend><depend>sensor_msgs</depend><depend>std_msgs</depend><depend>cage_msgs</depend><depend>cage_geo</depend><depend>cage_mavros_adapter</depend></package>

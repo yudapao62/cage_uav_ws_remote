@@ -1,0 +1,26 @@
+uint8 STATUS_CONFIRMED=0
+uint8 STATUS_AMBIGUOUS=1
+uint8 STATUS_LOST=2
+uint8 STATUS_STALE_MAP=3
+uint8 STATUS_MAP_MISMATCH=4
+
+std_msgs/Header header
+uint8 status
+string map_uuid
+uint64 map_version
+string map_sha256
+string manifest_sha256
+string task_map_uuid
+uint64 task_map_version
+string task_map_sha256
+string task_manifest_sha256
+string previous_cell_id
+string current_cell_id
+string next_cell_id
+string top1_cell_id
+string top2_cell_id
+float64 top1_posterior
+float64 top2_posterior
+float64 entropy
+string decision_reason
+cage_msgs/FeederCellHypothesis[] hypotheses

@@ -1,0 +1,26 @@
+uint8 VALIDATION_UNKNOWN=0
+uint8 VALIDATION_FULL_VALID=1
+uint8 VALIDATION_INVALID=2
+uint8 COMPATIBILITY_UNKNOWN=0
+uint8 COMPATIBILITY_COMPATIBLE=1
+uint8 COMPATIBILITY_INCOMPATIBLE=2
+
+string task_id
+int32 cage_id
+string map_uuid
+uint64 map_version
+string map_sha256
+string manifest_sha256
+float64 source_completed_at_unix_sec
+uint32 confirmed_cells
+uint32 expected_cells
+float32 coverage
+bool frozen
+uint8 validation_state
+uint8 compatibility_state
+bool active
+bool legacy_reference_assumed
+bool legacy_environment_assumed
+float64 last_validated_at_unix_sec
+string validation_code
+string validation_message

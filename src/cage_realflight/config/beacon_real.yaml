@@ -1,0 +1,18 @@
+beacon:
+  input_topic_a: "/farm/scene_1/anchor_A/fix"
+  input_topic_b: "/farm/scene_1/anchor_B/fix"
+  input_msg_type: "gps_receiver/AnchorFix"
+  active_scene_id: 1
+  anchor_a_id: "A"
+  anchor_b_id: "B"
+  require_valid_flag: true
+  min_satellites: 6
+  receive_timeout_sec: 2.0
+  max_pair_time_skew_sec: 1.0
+  min_baseline_m: 5.0
+  max_baseline_m: 500.0
+  max_altitude_difference_m: 20.0
+  max_anchor_jump_m: 5.0
+  filtering: {enabled: true, sample_window: 10, method: median}
+  freeze_geometry_during_active_task: true
+  cage_offset: {longitudinal_m: 0.0, lateral_m: 0.0, yaw_offset_deg: 0.0}

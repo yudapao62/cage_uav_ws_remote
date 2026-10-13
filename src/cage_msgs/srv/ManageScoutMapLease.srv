@@ -1,0 +1,18 @@
+uint8 OP_ACQUIRE=0
+uint8 OP_RENEW=1
+uint8 OP_RELEASE=2
+
+uint8 operation
+string feeding_task_id
+string lease_id
+string map_uuid
+uint64 map_version
+string map_sha256
+string manifest_sha256
+float32 requested_ttl_sec
+---
+bool success
+string reason_code
+string message
+string lease_id
+float64 expires_in_sec

@@ -1,0 +1,10 @@
+<launch>
+  <arg name="start_rviz" default="true"/>
+  <arg name="start_web" default="true"/>
+  <rosparam command="load" file="$(find cage_realflight)/config/web_real.yaml"/>
+  <include file="$(find cage_visualization)/launch/visualization.launch">
+    <arg name="start_rviz" value="$(arg start_rviz)"/>
+    <arg name="rviz_config" value="$(find cage_realflight)/rviz/realflight.rviz"/>
+  </include>
+  <node if="$(arg start_web)" pkg="cage_web_bridge" type="web_bridge_node.py" name="cage_web_bridge" output="screen"/>
+</launch>

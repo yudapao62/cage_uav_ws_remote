@@ -1,0 +1,8 @@
+# Full mission defaults. Use sitl_manual.yaml for standalone GUIDED/manual tests.
+simulation:
+  backend: sitl
+control_authority:
+  initial_owner: AUTO
+  auto_mode: AUTO
+  manual_mode: LOITER
+  land_mode: LAND

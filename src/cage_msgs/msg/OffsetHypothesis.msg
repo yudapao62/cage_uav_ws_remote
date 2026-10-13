@@ -1,0 +1,8 @@
+int32 delta_row
+int32 delta_col
+float64 posterior
+float64 geometry_likelihood
+float64 topology_likelihood
+float64 motion_likelihood
+bool valid
+string reject_reason

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="water_surface">
+    <static>true</static>
+    <link name="water_link">
+      <collision name="water_collision">
+        <geometry><plane><normal>0 0 1</normal><size>2000.000 2000.000</size></plane></geometry>
+      </collision>
+      <visual name="water_visual">
+        <geometry><plane><normal>0 0 1</normal><size>2000.000 2000.000</size></plane></geometry>
+        <material>
+          <ambient>0.240 0.340 0.350 1</ambient>
+          <diffuse>0.350 0.470 0.490 1.000</diffuse>
+          <specular>0.150 0.150 0.150 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

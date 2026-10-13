@@ -1,0 +1,11 @@
+int32 row
+int32 col
+string cell_id
+float64 gps_likelihood
+float64 visual_likelihood
+float64 transition_prior
+float64 posterior
+float64 mahalanobis_d2
+float64 map_age_sec
+bool inside_gate
+string gate_reason

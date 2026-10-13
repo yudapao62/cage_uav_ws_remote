@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cage_sitl</name>
+  <version>0.1.0</version>
+  <description>Layered ArduPilot SITL, Gazebo Classic and MAVROS integration.</description>
+  <maintainer email="ubuntu@example.com">ubuntu</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>cage_control_authority</depend>
+  <exec_depend>cage_bringup</exec_depend>
+  <exec_depend>cage_visualization</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>mavros</exec_depend>
+  <exec_depend>rosbag</exec_depend>
+</package>

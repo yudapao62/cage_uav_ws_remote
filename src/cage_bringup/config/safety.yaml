@@ -1,0 +1,9 @@
+safety:
+  rc_override_priority: true
+  gps_timeout: 2.0
+  fcu_timeout: 2.0
+  low_battery_threshold: 0.20
+  max_leg_distance: 5000.0
+  feeder_off_on_override: true
+  feeder_off_on_error: true
+  allow_auto_resume_after_override: false

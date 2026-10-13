@@ -1,0 +1,92 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /GPS Current Geometry1
+        - /GPS Position Scatter1
+    Tree Height: 650
+  - Class: rviz/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/Grid
+      Name: ENU Grid
+      Enabled: true
+      Alpha: 0.45
+      Cell Size: 1
+      Color: 100; 120; 130
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Plane: XY
+      Plane Cell Count: 100
+      Reference Frame: gps_test_enu
+      Value: true
+    - Class: rviz/TF
+      Name: ENU TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree: {}
+      Value: true
+    - Class: rviz/MarkerArray
+      Name: GPS Current Geometry
+      Enabled: true
+      Marker Topic: /gps_test/markers
+      Queue Size: 10
+      Namespaces:
+        gps_points: true
+        gps_labels: true
+        distance_lines: true
+        distance_text: true
+        error_vectors: true
+        enu_axes: true
+        status_panel: true
+      Value: true
+    - Class: rviz/MarkerArray
+      Name: GPS Position Scatter
+      Enabled: true
+      Marker Topic: /gps_test/trails
+      Queue Size: 10
+      Namespaces:
+        gps_trails: true
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 38; 48; 54
+    Default Light: true
+    Fixed Frame: gps_test_enu
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 30
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Name: Current View
+      Pitch: 0.65
+      Yaw: 0.80
+      Target Frame: gps_test_enu
+    Saved: ~
+Window Geometry:
+  Height: 900
+  Width: 1500
+  X: 100
+  Y: 60

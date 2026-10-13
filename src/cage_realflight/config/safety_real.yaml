@@ -1,0 +1,12 @@
+safety:
+  rc_override_priority: true
+  allow_auto_resume_after_override: false
+  auto_arm: false
+  gps_timeout: 2.0
+  fcu_timeout: 2.0
+  beacon_timeout_sec: 5.0
+  require_beacon_before_start: true
+  timeout_recovery_action: RTL
+  low_battery_action: RTL
+  max_leg_distance: 5000.0
+  beacon_loss_during_active_mission: {timeout_sec: 5.0, action: RTL}

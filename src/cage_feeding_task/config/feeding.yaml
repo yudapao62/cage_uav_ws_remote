@@ -1,0 +1,8 @@
+feeding:
+  active_cage_id: 0
+  allow_other_cages: false
+  feed_relative_alt: 15.0
+  transit_relative_alt: 25.0
+  repeat_interval_sec: 3.0
+  max_repeat_count: 20
+  max_targets_per_mission: 200

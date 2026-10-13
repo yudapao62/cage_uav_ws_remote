@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="unit_cage">
+    <static>true</static>
+    <include>
+      <uri>model://fish_farm</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </model>
+</sdf>

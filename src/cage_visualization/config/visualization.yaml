@@ -1,0 +1,66 @@
+visualization:
+  frame_id: "map"
+  view_mode: "3d"
+
+  # The SITL takeoff point is the common WGS84 origin of the ENU map frame.
+  home_lat: -35.363261
+  home_lon: 149.165230
+  home_alt: 584.0
+
+  circle_samples: 100
+  gps_marker_scale: 1.2
+  center_marker_scale: 0.8
+
+  line_width:
+    diameter: 0.20
+    circle: 0.15
+    planned_path: 0.10
+    actual_path: 0.12
+
+  text_height: 1.8
+  actual_path_max_points: 5000
+  actual_path_min_spacing: 0.10
+  heading_arrow_length: 4.0
+  uav_rviz_scale: 2.0
+  status_position: [15.0, -15.0, 10.0]
+
+  sea_plane:
+    enabled: true
+    size: 1000.0
+    thickness: 0.02
+    height: 0.25
+    alpha: 0.32
+
+  cage:
+    shape: "circle"
+    show_center: true
+    show_diameter: true
+    show_direction: true
+    show_rectangle: false
+    ring_height: 0.35
+    ring_buoy_scale: 0.70
+
+  waypoint:
+    enabled: true
+    show_label: true
+    show_altitude: true
+    show_vertical_guide: true
+    current_scale_factor: 1.5
+
+  path:
+    planned: true
+    actual: true
+
+  show:
+    gps_labels: true
+    cage_center: true
+    cage_direction: true
+    cage_rectangle: false
+    waypoints: true
+    waypoint_labels: true
+    planned_path: true
+    actual_path: true
+    mission_status: true
+    heading_arrow: true
+    safety_zone: false
+    debug_grid: false

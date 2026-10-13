@@ -1,0 +1,19 @@
+vehicle:
+  fcu_url: "tcp://127.0.0.1:5760"
+  real_fcu_url: "serial:///dev/ttyUSB0:921600"
+  auto_arm: false
+  auto_mode: "AUTO"
+  prearm_mode: "STABILIZE"
+  # Real vehicle and legacy mock retain the original AUTO mission takeoff.
+  # The SITL full-mission launch overrides this explicitly.
+  use_guided_takeoff: false
+  rtl_mode: "RTL"
+  land_mode: "LAND"
+  mission_home_item_required: true
+  request_stream_rate: true
+  stream_rate: 10
+  home_reference: "takeoff"
+  cruise_relative_alt: 30.0
+  takeoff_relative_alt: 20.0
+  feed_relative_alt: 15.0
+  manual_modes: ["STABILIZE", "LOITER", "POSHOLD", "ALT_HOLD", "MANUAL"]

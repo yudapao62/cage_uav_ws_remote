@@ -1,0 +1,27 @@
+<launch>
+  <arg name="fcu_url" default="tcp://127.0.0.1:5760/?ids=255,240"/>
+  <arg name="use_keyboard" default="true"/>
+  <arg name="use_joystick" default="false"/>
+  <arg name="start_rviz" default="true"/>
+  <arg name="auto_arm" default="true"/>
+  <arg name="config" default="$(find cage_sitl)/config/sitl_full.yaml"/>
+  <rosparam command="load" file="$(arg config)"/>
+  <include file="$(find cage_sitl)/launch/manual_flight_sitl.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+    <arg name="use_keyboard" value="$(arg use_keyboard)"/>
+    <arg name="use_joystick" value="$(arg use_joystick)"/>
+    <arg name="config" value="$(arg config)"/>
+  </include>
+  <include file="$(find cage_bringup)/launch/system.launch">
+    <arg name="start_mavros" value="false"/>
+    <arg name="auto_arm" value="$(arg auto_arm)"/>
+  </include>
+  <!-- system.launch loads vehicle.yaml; restore SITL mission authority settings. -->
+  <param name="/simulation/backend" value="sitl"/>
+  <param name="/control_authority/auto_mode" value="LOITER"/>
+  <param name="/vehicle/takeoff_mode" value="GUIDED"/>
+  <param name="/vehicle/use_guided_takeoff" value="true"/>
+  <include file="$(find cage_visualization)/launch/visualization.launch">
+    <arg name="start_rviz" value="$(arg start_rviz)"/>
+  </include>
+</launch>

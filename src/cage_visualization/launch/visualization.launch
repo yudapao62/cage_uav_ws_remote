@@ -1,0 +1,22 @@
+<launch>
+  <arg name="start_rviz" default="true"/>
+  <arg name="rviz_config" default="$(find cage_visualization)/rviz/cage_uav.rviz"/>
+
+  <rosparam command="load" file="$(find cage_visualization)/config/visualization.yaml"/>
+
+  <!-- This node clears itself in rectangular mode and renders A/B, circle and
+       the single center target only when /cage/geometry_mode is circular. -->
+  <node pkg="cage_visualization" type="cage_marker_node.py"
+        name="cage_marker_node" output="screen"/>
+  <node pkg="cage_visualization" type="waypoint_marker_node.py"
+        name="waypoint_marker_node" output="screen"/>
+  <node pkg="cage_visualization" type="trajectory_visualizer.py"
+        name="trajectory_visualizer" output="screen"/>
+  <node pkg="cage_visualization" type="mission_status_visualizer.py"
+        name="mission_status_visualizer" output="screen"/>
+
+  <node if="$(arg start_rviz)" pkg="rviz" type="rviz" name="cage_uav_rviz"
+        args="-d $(arg rviz_config)" output="log" required="false">
+    <env name="DISABLE_ROS1_EOL_WARNINGS" value="1"/>
+  </node>
+</launch>

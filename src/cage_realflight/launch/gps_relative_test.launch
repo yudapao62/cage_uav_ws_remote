@@ -1,0 +1,11 @@
+<launch>
+  <arg name="start_rviz" default="true"/>
+  <arg name="config" default="$(find cage_realflight)/config/gps_relative_visualizer.yaml"/>
+  <arg name="rviz_config" default="$(find cage_realflight)/rviz/gps_relative_test.rviz"/>
+  <arg name="csv_path" default=""/>
+
+  <rosparam command="load" file="$(arg config)" ns="gps_relative_visualizer"/>
+  <param name="/gps_relative_visualizer/csv/path" value="$(arg csv_path)"/>
+  <node pkg="cage_realflight" type="gps_relative_visualizer.py" name="gps_relative_visualizer" output="screen"/>
+  <node if="$(arg start_rviz)" pkg="rviz" type="rviz" name="gps_relative_test_rviz" args="-d $(arg rviz_config)" output="screen"/>
+</launch>

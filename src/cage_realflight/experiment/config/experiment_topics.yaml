@@ -1,0 +1,65 @@
+topics:
+  ground_gps: /farm/anchor_fix
+  ground_gps_a: /farm/scene_1/anchor_A/fix
+  ground_gps_b: /farm/scene_1/anchor_B/fix
+  uav_gps: /mavros/global_position/global
+  planner_path: /mission/waypoints
+  current_target: /feeding/current_cell
+  target_cells: /feeding/target_cells
+  task_request: /feeding/task_request
+  mission_request: /mission/request
+  mavros_mission_waypoints: /mavros/mission/waypoints
+  mavros_mission_reached: /mavros/mission/reached
+  mavros_state: /mavros/state
+  rc_input: /mavros/rc/in
+  fsm_state: /mission/state
+  local_position: /mavros/local_position/pose
+  local_velocity: /mavros/local_position/velocity_local
+  relative_altitude: /mavros/global_position/rel_alt
+  battery: /mavros/battery
+  beacon_status: /cage/beacon/status
+  gps_relative_status: /gps_test/relative_status
+  gps_test_markers: /gps_test/markers
+  gps_test_trails: /gps_test/trails
+  tf: /tf
+  tf_static: /tf_static
+
+# This project uploads a MAVLink Mission through services. It does not publish
+# a continuous position/raw setpoint topic. Keep this null unless the control
+# architecture is intentionally changed and re-audited.
+mavros_output_setpoint_topic: null
+
+services:
+  mission_clear: /mavros/mission/clear
+  mission_push: /mavros/mission/push
+  mission_pull: /mavros/mission/pull
+  mission_set_current: /mavros/mission/set_current
+  set_mode: /mavros/set_mode
+  arming: /mavros/cmd/arming
+
+profiles:
+  gps_required: [ground_gps, uav_gps, mavros_state]
+  gps_optional: [beacon_status, battery]
+  waypoint_required: [ground_gps, uav_gps, planner_path, mavros_mission_waypoints, mavros_state, fsm_state]
+  waypoint_optional: [current_target, target_cells, task_request, mission_request, mavros_mission_reached, local_position, local_velocity, relative_altitude, beacon_status]
+  override_required: [rc_input, mavros_state, fsm_state]
+  override_optional: [planner_path, current_target, mavros_mission_waypoints, mavros_mission_reached, local_position, local_velocity, uav_gps, relative_altitude, battery]
+  gps_rviz_required: [ground_gps_a, ground_gps_b, uav_gps, gps_relative_status]
+  gps_rviz_optional: [gps_test_markers, gps_test_trails, tf, tf_static, mavros_state, beacon_status]
+
+gps_analysis:
+  ground_anchor_id: A
+  max_sync_delta_sec: 0.20
+  antenna_offset_enu_m: [0.0, 0.0, 0.0]
+
+override_analysis:
+  # One-based H12 mode-switch channel. Confirm it on site before recording.
+  rc_mode_channel: 5
+  rc_change_threshold_us: 150
+  stick_channels: [1, 2, 3, 4]
+  stick_center_us: 1500
+  stick_activity_threshold_us: 100
+  mode_transition_timeout_sec: 5.0
+  no_reentry_window_sec: 30.0
+  auto_modes: [AUTO, GUIDED, OFFBOARD, MISSION]
+  manual_modes: [STABILIZE, LOITER, POSHOLD, ALT_HOLD, MANUAL]

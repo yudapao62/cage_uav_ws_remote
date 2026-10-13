@@ -1,0 +1,25 @@
+cage:
+  # Geometry/task strategy: rectangular | circular. Keep rectangular until the
+  # circular dry-run checklist and K9 no-prop bench validation are complete.
+  geometry_mode: circular
+  circular:
+    feeding_dwell_sec: 5.0
+    target_acceptance_radius_m: 1.5
+    feeding_altitude_tolerance_m: 3.0
+
+cage_grid:
+  # Placeholder dimensions from the simulation; replace with measured cage values.
+  cage_id: 0
+  rows: 6
+  cols: 10
+  cell_size_x: 12.0
+  cell_size_y: 12.0
+  max_grid_length_error_m: 5.0
+  grid_update_min_translation_m: 0.25
+  grid_update_min_yaw_deg: 0.5
+  geometry_source: beacon
+  orientation_source: anchor_a_to_b
+  anchor_line_role: grid_main_axis
+  origin_mode: derived_from_anchors
+  home_stable_samples: 10
+  home_max_spread_m: 2.0

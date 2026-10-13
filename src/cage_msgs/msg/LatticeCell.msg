@@ -1,0 +1,21 @@
+uint8 IDENTITY_TENTATIVE=0
+uint8 IDENTITY_CONFIRMED=1
+uint8 IDENTITY_REJECTED=2
+uint8 VISIBILITY_VISIBLE=0
+uint8 VISIBILITY_OUT_OF_VIEW=1
+uint8 VISIBILITY_EXPECTED_BUT_UNOBSERVED=2
+
+int32 row
+int32 col
+string cell_id
+geometry_msgs/Point[] polygon
+geometry_msgs/Point nominal_position
+geometry_msgs/Point estimated_position
+float64[4] covariance_xy
+uint8 identity_state
+uint8 visibility_state
+float32 identity_confidence
+time first_seen
+time last_seen
+uint32 observation_count
+bool exists

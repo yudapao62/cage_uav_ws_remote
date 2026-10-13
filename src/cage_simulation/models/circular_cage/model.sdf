@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="circular_cage">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="cage_link">
+      <collision name="buoy_0_collision">
+        <pose>60.026210 -129.827616 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_0_visual">
+        <pose>60.026210 -129.827616 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_1_collision">
+        <pose>59.769761 -125.914957 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_1_visual">
+        <pose>59.769761 -125.914957 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_2_collision">
+        <pose>59.004801 -122.069246 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_2_visual">
+        <pose>59.004801 -122.069246 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_3_collision">
+        <pose>57.744420 -118.356282 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_3_visual">
+        <pose>57.744420 -118.356282 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_4_collision">
+        <pose>56.010182 -114.839595 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_4_visual">
+        <pose>56.010182 -114.839595 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_5_collision">
+        <pose>53.831761 -111.579358 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_5_visual">
+        <pose>53.831761 -111.579358 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_6_collision">
+        <pose>51.246431 -108.631354 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_6_visual">
+        <pose>51.246431 -108.631354 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_7_collision">
+        <pose>48.298427 -106.046024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_7_visual">
+        <pose>48.298427 -106.046024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_8_collision">
+        <pose>45.038190 -103.867603 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_8_visual">
+        <pose>45.038190 -103.867603 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_9_collision">
+        <pose>41.521504 -102.133365 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_9_visual">
+        <pose>41.521504 -102.133365 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_10_collision">
+        <pose>37.808540 -100.872984 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_10_visual">
+        <pose>37.808540 -100.872984 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_11_collision">
+        <pose>33.962828 -100.108024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_11_visual">
+        <pose>33.962828 -100.108024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_12_collision">
+        <pose>30.050170 -99.851575 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_12_visual">
+        <pose>30.050170 -99.851575 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_13_collision">
+        <pose>26.137511 -100.108024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_13_visual">
+        <pose>26.137511 -100.108024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_14_collision">
+        <pose>22.291799 -100.872984 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_14_visual">
+        <pose>22.291799 -100.872984 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_15_collision">
+        <pose>18.578835 -102.133365 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_15_visual">
+        <pose>18.578835 -102.133365 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_16_collision">
+        <pose>15.062149 -103.867603 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_16_visual">
+        <pose>15.062149 -103.867603 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_17_collision">
+        <pose>11.801912 -106.046024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_17_visual">
+        <pose>11.801912 -106.046024 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_18_collision">
+        <pose>8.853908 -108.631354 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_18_visual">
+        <pose>8.853908 -108.631354 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_19_collision">
+        <pose>6.268578 -111.579358 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_19_visual">
+        <pose>6.268578 -111.579358 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_20_collision">
+        <pose>4.090157 -114.839595 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_20_visual">
+        <pose>4.090157 -114.839595 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_21_collision">
+        <pose>2.355919 -118.356282 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_21_visual">
+        <pose>2.355919 -118.356282 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_22_collision">
+        <pose>1.095538 -122.069246 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_22_visual">
+        <pose>1.095538 -122.069246 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_23_collision">
+        <pose>0.330578 -125.914957 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_23_visual">
+        <pose>0.330578 -125.914957 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_24_collision">
+        <pose>0.074129 -129.827616 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_24_visual">
+        <pose>0.074129 -129.827616 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_25_collision">
+        <pose>0.330578 -133.740274 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_25_visual">
+        <pose>0.330578 -133.740274 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_26_collision">
+        <pose>1.095538 -137.585986 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_26_visual">
+        <pose>1.095538 -137.585986 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_27_collision">
+        <pose>2.355919 -141.298950 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_27_visual">
+        <pose>2.355919 -141.298950 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_28_collision">
+        <pose>4.090157 -144.815636 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_28_visual">
+        <pose>4.090157 -144.815636 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_29_collision">
+        <pose>6.268578 -148.075873 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_29_visual">
+        <pose>6.268578 -148.075873 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_30_collision">
+        <pose>8.853908 -151.023877 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_30_visual">
+        <pose>8.853908 -151.023877 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_31_collision">
+        <pose>11.801912 -153.609208 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_31_visual">
+        <pose>11.801912 -153.609208 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_32_collision">
+        <pose>15.062149 -155.787628 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_32_visual">
+        <pose>15.062149 -155.787628 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_33_collision">
+        <pose>18.578835 -157.521866 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_33_visual">
+        <pose>18.578835 -157.521866 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_34_collision">
+        <pose>22.291799 -158.782247 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_34_visual">
+        <pose>22.291799 -158.782247 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_35_collision">
+        <pose>26.137511 -159.547207 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_35_visual">
+        <pose>26.137511 -159.547207 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_36_collision">
+        <pose>30.050170 -159.803656 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_36_visual">
+        <pose>30.050170 -159.803656 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_37_collision">
+        <pose>33.962828 -159.547207 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_37_visual">
+        <pose>33.962828 -159.547207 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_38_collision">
+        <pose>37.808540 -158.782247 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_38_visual">
+        <pose>37.808540 -158.782247 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_39_collision">
+        <pose>41.521504 -157.521866 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_39_visual">
+        <pose>41.521504 -157.521866 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_40_collision">
+        <pose>45.038190 -155.787628 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_40_visual">
+        <pose>45.038190 -155.787628 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_41_collision">
+        <pose>48.298427 -153.609208 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_41_visual">
+        <pose>48.298427 -153.609208 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_42_collision">
+        <pose>51.246431 -151.023877 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_42_visual">
+        <pose>51.246431 -151.023877 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_43_collision">
+        <pose>53.831761 -148.075873 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_43_visual">
+        <pose>53.831761 -148.075873 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_44_collision">
+        <pose>56.010182 -144.815636 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_44_visual">
+        <pose>56.010182 -144.815636 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_45_collision">
+        <pose>57.744420 -141.298950 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_45_visual">
+        <pose>57.744420 -141.298950 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_46_collision">
+        <pose>59.004801 -137.585986 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_46_visual">
+        <pose>59.004801 -137.585986 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="buoy_47_collision">
+        <pose>59.769761 -133.740274 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+      </collision>
+      <visual name="buoy_47_visual">
+        <pose>59.769761 -133.740274 0.250000 0 0 0</pose>
+        <geometry><cylinder><radius>0.350</radius><length>0.500</length></cylinder></geometry>
+        <material><ambient>0.88 0.92 0.95 1</ambient><diffuse>0.96 0.97 0.98 1</diffuse></material>
+      </visual>
+      <collision name="gps_a_collision">
+        <pose>30.015650 -99.851595 0.50 0 0 0</pose>
+        <geometry><cylinder><radius>0.55</radius><length>1.0</length></cylinder></geometry>
+      </collision>
+      <visual name="gps_a_body">
+        <pose>30.015650 -99.851595 0.50 0 0 0</pose>
+        <geometry><cylinder><radius>0.55</radius><length>1.0</length></cylinder></geometry>
+        <material><ambient>0.10 0.72 0.24 1</ambient><diffuse>0.15 0.85 0.30 1</diffuse></material>
+      </visual>
+      <visual name="gps_a_top">
+        <pose>30.015650 -99.851595 1.20 0 0 0</pose>
+        <geometry><sphere><radius>0.38</radius></sphere></geometry>
+        <material><ambient>0.10 0.72 0.24 1</ambient><diffuse>0.15 0.85 0.30 1</diffuse></material>
+      </visual>
+      <collision name="gps_b_collision">
+        <pose>30.084689 -159.803636 0.50 0 0 0</pose>
+        <geometry><cylinder><radius>0.55</radius><length>1.0</length></cylinder></geometry>
+      </collision>
+      <visual name="gps_b_body">
+        <pose>30.084689 -159.803636 0.50 0 0 0</pose>
+        <geometry><cylinder><radius>0.55</radius><length>1.0</length></cylinder></geometry>
+        <material><ambient>0.90 0.36 0.06 1</ambient><diffuse>1.0 0.50 0.10 1</diffuse></material>
+      </visual>
+      <visual name="gps_b_top">
+        <pose>30.084689 -159.803636 1.20 0 0 0</pose>
+        <geometry><sphere><radius>0.38</radius></sphere></geometry>
+        <material><ambient>0.90 0.36 0.06 1</ambient><diffuse>1.0 0.50 0.10 1</diffuse></material>
+      </visual>
+    </link>
+  </model>
+</sdf>

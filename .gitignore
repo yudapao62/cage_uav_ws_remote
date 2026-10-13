@@ -1,0 +1,29 @@
+# macOS and editor metadata
+.DS_Store
+.vscode/
+.idea/
+*~
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# ROS / catkin build products
+build/
+devel/
+install/
+log/
+logs/
+.catkin_tools/
+
+# Runtime recordings and temporary output
+*.bag
+*.bag.active
+*.db3
+*.log
+*.tmp
+

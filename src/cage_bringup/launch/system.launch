@@ -1,0 +1,26 @@
+<launch>
+  <arg name="start_mavros" default="true"/>
+  <arg name="start_web" default="true"/>
+  <arg name="web_port" default="8080"/>
+  <arg name="fcu_url" default="tcp://127.0.0.1:5760"/>
+  <arg name="auto_arm" default="false"/>
+  <rosparam command="load" file="$(find cage_bringup)/config/vehicle.yaml"/>
+  <rosparam command="load" file="$(find cage_bringup)/config/mission.yaml"/>
+  <rosparam command="load" file="$(find cage_bringup)/config/cage.yaml"/>
+  <rosparam command="load" file="$(find cage_bringup)/config/safety.yaml"/>
+  <rosparam command="load" file="$(find cage_grid)/config/cage_grid.yaml"/>
+  <rosparam command="load" file="$(find cage_feeding_task)/config/feeding.yaml"/>
+  <rosparam command="load" file="$(find cage_web_bridge)/config/web.yaml"/>
+  <param name="/web_bridge/port" value="$(arg web_port)"/>
+  <param name="/vehicle/auto_arm" value="$(arg auto_arm)"/>
+  <include if="$(arg start_mavros)" file="$(find mavros)/launch/apm.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/><arg name="gcs_url" value=""/>
+  </include>
+  <node pkg="cage_geo" type="cage_geo_node.py" name="cage_geo_node" output="screen"/>
+  <node pkg="cage_grid" type="cage_grid_node.py" name="cage_grid_node" output="screen"/>
+  <node pkg="cage_waypoint_planner" type="waypoint_planner_node.py" name="waypoint_planner_node" output="screen"/>
+  <node pkg="cage_feeder" type="feeder_simulator_node.py" name="feeder_simulator_node" output="screen"/>
+  <node pkg="cage_mission_fsm" type="mission_fsm_node.py" name="mission_fsm_node" output="screen"/>
+  <node pkg="cage_feeding_task" type="feeding_task_manager_node.py" name="feeding_task_manager_node" output="screen"/>
+  <node if="$(arg start_web)" pkg="cage_web_bridge" type="web_bridge_node.py" name="cage_web_bridge" output="screen"/>
+</launch>

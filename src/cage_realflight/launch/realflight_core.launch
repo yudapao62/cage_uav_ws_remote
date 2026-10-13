@@ -1,0 +1,28 @@
+<launch>
+  <arg name="start_mavros" default="true"/>
+  <arg name="fcu_url" default="serial:///dev/ttyUSB0:921600"/>
+  <arg name="feeder_mode" default="dry_run"/>
+  <rosparam command="load" file="$(find cage_realflight)/config/vehicle_real.yaml"/>
+  <rosparam command="load" file="$(find cage_realflight)/config/mission_real.yaml"/>
+  <rosparam command="load" file="$(find cage_realflight)/config/safety_real.yaml"/>
+  <rosparam command="load" file="$(find cage_realflight)/config/feeding_real.yaml"/>
+  <rosparam command="load" file="$(find cage_realflight)/config/beacon_real.yaml"/>
+  <rosparam command="load" file="$(find cage_realflight)/config/cage_grid_real.yaml"/>
+  <param name="/vehicle/fcu_url" value="$(arg fcu_url)"/>
+  <param name="/vehicle/auto_arm" value="false"/>
+  <param name="/feeding/feeder_mode" value="$(arg feeder_mode)"/>
+  <param name="/realflight/start_ready" value="false"/>
+  <param name="/realflight/site_alignment_confirmed" value="false"/>
+  <include if="$(arg start_mavros)" file="$(find mavros)/launch/apm.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/><arg name="gcs_url" value=""/>
+  </include>
+  <node pkg="cage_realflight" type="beacon_gps_adapter_node.py" name="beacon_gps_adapter" output="screen"/>
+  <node pkg="cage_grid" type="cage_grid_node.py" name="cage_grid_node" output="screen"/>
+  <node pkg="cage_feeding_task" type="feeding_task_manager_node.py" name="feeding_task_manager_node" output="screen"/>
+  <node pkg="cage_waypoint_planner" type="waypoint_planner_node.py" name="waypoint_planner_node" output="screen"/>
+  <node pkg="cage_mavros_adapter" type="mavros_adapter_node.py" name="mavros_adapter_node" output="screen"/>
+  <node if="$(eval arg('feeder_mode') == 'real')" pkg="cage_feeder" type="feeder_rc9_node.py" name="feeder_rc9_node" output="screen"/>
+  <node pkg="cage_mission_fsm" type="mission_fsm_node.py" name="mission_fsm_node" output="screen"/>
+  <node pkg="cage_realflight" type="realflight_precheck.py" name="realflight_precheck" output="screen"/>
+  <node pkg="cage_realflight" type="realflight_status_monitor.py" name="realflight_status_monitor" output="screen"/>
+</launch>

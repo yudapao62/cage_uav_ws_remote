@@ -1,0 +1,11 @@
+std_msgs/Header header
+string task_id
+int32 cage_id
+string mode
+int32[] rows
+int32[] cols
+string[] selected_cell_ids
+int32 repeat_count
+bool auto_start
+float64 feed_relative_alt
+float64 transit_relative_alt

@@ -1,0 +1,23 @@
+string task_id
+int32 cage_id
+string expected_map_uuid
+uint64 expected_map_version
+string expected_map_sha256
+string expected_manifest_sha256
+---
+bool success
+bool committed
+string reason_code
+string message
+string map_uuid
+uint64 map_version
+string map_sha256
+string manifest_sha256
+uint32 confirmed_cells
+uint32 expected_cells
+float32 coverage
+float64 source_completed_at_unix_sec
+float64 activated_at_unix_sec
+bool idempotent
+bool legacy_reference_assumed
+bool legacy_environment_assumed

@@ -1,0 +1,29 @@
+camera:
+  active_mode: debug
+  debug:
+    width: 1280
+    height: 720
+    fps: 30
+    horizontal_fov_deg: 78.0
+  vision:
+    width: 1920
+    height: 1080
+    fps: 30
+    horizontal_fov_deg: 78.0
+  mount:
+    roll_deg: 0.0
+    pitch_deg: -65.0
+    yaw_deg: 0.0
+    x: 0.0
+    y: 0.0
+    z: -0.08
+  topic_namespace: /uav_camera
+  image_topic: image_raw
+  camera_info_topic: camera_info
+
+visual_test_pose:
+  x: 0.0
+  y: -30.0
+  z: 30.0
+  yaw_deg: 0.0
+  camera_pitch_deg: -65.0

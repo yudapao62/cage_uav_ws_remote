@@ -1,0 +1,10 @@
+mission:
+  enter_distance: 20.0
+  exit_distance: 20.0
+  waypoint_acceptance_radius: 3.0
+  speed: 5.0
+  arm_timeout: 60.0
+  takeoff_timeout: 60.0
+  transit_timeout: 600.0
+  feeding_timeout: 600.0
+  rtl_timeout: 600.0

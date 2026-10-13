@@ -1,0 +1,7 @@
+string task_id
+int32 cage_id
+---
+bool success
+string reason
+string map_uuid
+uint64 map_version

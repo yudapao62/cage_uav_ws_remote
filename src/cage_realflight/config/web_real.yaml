@@ -1,0 +1,5 @@
+web_bridge:
+  host: 0.0.0.0
+  port: 8080
+  real_flight: true
+  fcu_label: K9

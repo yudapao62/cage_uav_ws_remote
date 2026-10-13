@@ -1,0 +1,10 @@
+int32 seq
+float64 lat
+float64 lon
+float64 alt
+float64 yaw
+float64 acceptance_radius
+float64 speed
+float64 hold_time
+string waypoint_type
+string cell_id

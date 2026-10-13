@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cage_grid</name>
+  <version>0.1.0</version>
+  <description>Single source of truth for the active cage grid.</description>
+  <maintainer email="ubuntu@example.com">ubuntu</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>cage_geo</depend>
+  <depend>cage_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+</package>

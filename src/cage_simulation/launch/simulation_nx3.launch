@@ -1,0 +1,30 @@
+<launch>
+  <arg name="start_gazebo" default="true"/>
+  <arg name="start_rviz" default="false"/>
+  <arg name="start_web" default="false"/>
+  <arg name="web_port" default="8080"/>
+  <arg name="auto_arm" default="true"/>
+  <arg name="world" default="$(find cage_simulation)/worlds/cage_mission.world"/>
+  <!-- Explicitly reset real-flight-only parameters when reusing a ROS master. -->
+  <param name="/cage_grid/geometry_source" value="fixed"/>
+  <param name="/realflight/start_ready" value="false"/>
+  <param name="/use_sim_time" value="$(arg start_gazebo)"/>
+  <env name="GAZEBO_MODEL_PATH" value="$(find cage_simulation)/models:/usr/share/gazebo-11/models"/>
+  <env name="GAZEBO_PLUGIN_PATH" value="/opt/ros/noetic/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins"/>
+  <include if="$(arg start_gazebo)" file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world)"/>
+    <arg name="paused" value="false"/>
+    <arg name="gui" value="false"/>
+    <arg name="headless" value="true"/>
+  </include>
+  <node pkg="cage_simulation" type="mock_mavros_node.py" name="mock_mavros" output="screen"/>
+  <include file="$(find cage_bringup)/launch/system.launch">
+    <arg name="start_mavros" value="false"/>
+    <arg name="auto_arm" value="$(arg auto_arm)"/>
+    <arg name="start_web" value="$(arg start_web)"/>
+    <arg name="web_port" value="$(arg web_port)"/>
+  </include>
+  <include file="$(find cage_visualization)/launch/visualization.launch">
+    <arg name="start_rviz" value="$(arg start_rviz)"/>
+  </include>
+</launch>

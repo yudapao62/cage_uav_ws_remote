@@ -1,0 +1,100 @@
+<launch>
+  <arg name="deformation_preset" default="medium"/>
+  <arg name="deformation_seed" default="42"/>
+  <arg name="observation_source" default="oracle_noisy"/>
+  <arg name="feeder_visual_source" default="oracle_noisy"/>
+  <arg name="start_gazebo" default="true"/>
+  <arg name="start_rviz" default="false"/>
+  <arg name="start_web" default="true"/>
+  <arg name="web_port" default="8081"/>
+  <arg name="start_scout_route" default="true"/>
+  <arg name="scout_auto_start" default="false"/>
+  <arg name="world" default="$(find cage_simulation)/worlds/cage_mission_deformed.world"/>
+  <arg name="ground_truth" default="$(find cage_simulation)/config/cage_lattice_ground_truth.json"/>
+  <arg name="event_log" default="/tmp/cage_persistent_lattice_events.jsonl"/>
+  <arg name="record_bag" default="false"/>
+  <arg name="scout_record_bag" default="false"/>
+  <arg name="bag_output" default="/tmp/cage_persistent_lattice.bag"/>
+  <arg name="environment_id" default="cage0-medium-seed42"/>
+  <arg name="environment_geometry_sha256" default="ccf8ca6809e75c9477dc1ec78074fcb39572461fcdc0833adff173625d8b0c9e"/>
+
+  <!-- Keep the legacy launch intact; all persistent-lattice overrides are
+       explicit and apply only to this dedicated entry point. -->
+  <include file="$(find cage_simulation)/launch/simulation_nx3.launch">
+    <arg name="start_gazebo" value="$(arg start_gazebo)"/>
+    <arg name="start_rviz" value="$(arg start_rviz)"/>
+    <arg name="start_web" value="$(arg start_web)"/>
+    <arg name="web_port" value="$(arg web_port)"/>
+    <arg name="auto_arm" value="true"/>
+    <arg name="world" value="$(arg world)"/>
+  </include>
+
+  <rosparam command="load" file="$(find cage_grid)/config/persistent_lattice.yaml"/>
+  <rosparam command="load" file="$(find cage_simulation)/config/persistent_lattice_sim.yaml"/>
+  <rosparam command="load" file="$(find cage_simulation)/config/scout_mission.yaml" subst_value="true"/>
+  <param name="/scout_mission/record_bag" value="$(arg scout_record_bag)"/>
+  <param name="/cage/geometry_mode" value="rectangular"/>
+  <param name="/cage_grid/geometry_source" value="fixed"/>
+  <param name="/persistent_lattice/deformation_preset" value="$(arg deformation_preset)"/>
+  <param name="/persistent_lattice/deformation_seed" value="$(arg deformation_seed)"/>
+  <param name="/persistent_lattice/observation_source" value="$(arg observation_source)"/>
+  <param name="/persistent_lattice/feeder_visual_source" value="$(arg feeder_visual_source)"/>
+  <!-- These two parameters are the registry's authoritative environment
+       identity. If a different world/ground-truth artifact is selected, its
+       identifier and SHA-256 must be supplied explicitly on the command line. -->
+  <param name="/scout_map_registry/environment_id" value="$(arg environment_id)"/>
+  <param name="/scout_map_registry/environment_geometry_sha256"
+         value="$(arg environment_geometry_sha256)"/>
+
+  <node pkg="cage_simulation" type="cage_ground_truth_publisher.py"
+        name="cage_ground_truth_publisher" output="screen">
+    <param name="ground_truth_file" value="$(arg ground_truth)"/>
+    <param name="cage_id" value="0"/>
+  </node>
+
+  <!-- Backward-compatible arg name: start_scout_route now enables the
+       request-driven manager; it never means launch-time takeoff. -->
+  <node if="$(arg start_scout_route)" pkg="cage_simulation"
+        type="scout_task_manager_node.py" name="scout_task_manager" output="screen">
+    <param name="auto_start" value="$(arg scout_auto_start)"/>
+  </node>
+
+  <node if="$(eval arg('observation_source') == 'oracle_noisy')"
+        pkg="cage_simulation" type="synthetic_lattice_observation_node.py"
+        name="scout_oracle_observation" output="screen">
+    <param name="visibility_mode" value="pose"/>
+    <param name="random_seed" value="$(arg deformation_seed)"/>
+    <param name="position_noise_std_m" value="0.15"/>
+    <param name="dropout_probability" value="0.03"/>
+    <param name="edge_observed_probability" value="0.85"/>
+    <param name="footprint_width_m" value="48.0"/>
+    <param name="footprint_height_m" value="36.0"/>
+  </node>
+
+  <node if="$(eval arg('feeder_visual_source') == 'oracle_noisy')"
+        pkg="cage_simulation" type="synthetic_lattice_observation_node.py"
+        name="feeder_oracle_observation" output="screen">
+    <param name="visibility_mode" value="pose"/>
+    <param name="random_seed" value="1000045"/>
+    <param name="position_noise_std_m" value="0.20"/>
+    <param name="dropout_probability" value="0.05"/>
+    <param name="edge_observed_probability" value="0.80"/>
+    <param name="footprint_width_m" value="36.0"/>
+    <param name="footprint_height_m" value="24.0"/>
+    <remap from="/scout/local_lattice_observation" to="/feeder/local_lattice_observation"/>
+  </node>
+
+  <node pkg="cage_grid" type="scout_lattice_node.py"
+        name="scout_lattice_node" output="screen"/>
+  <node pkg="cage_grid" type="scout_map_registry_node.py"
+        name="scout_map_registry" output="screen"/>
+  <node pkg="cage_grid" type="feeder_identity_node.py"
+        name="feeder_identity_node" output="screen"/>
+  <node pkg="cage_bringup" type="persistent_lattice_event_logger.py"
+        name="persistent_lattice_event_logger" output="screen">
+    <param name="output" value="$(arg event_log)"/>
+  </node>
+  <node if="$(arg record_bag)" pkg="rosbag" type="record"
+        name="persistent_lattice_rosbag" output="screen"
+        args="-O $(arg bag_output) /clock /tf /tf_static /uav_camera/image_raw /uav_camera/camera_info /mavros/state /mavros/extended_state /mavros/local_position/pose /mavros/global_position/global /mavros/global_position/rel_alt /mavros/mission/reached /sim_gt/cage/lattice /scout/task_request /scout/task_status /scout/local_lattice_observation /scout/offset_hypotheses /scout/working_lattice_map /scout/lattice_map /scout/active_map_status /scout/map_events /feeder/cell_hypotheses /feeder/identity_state /feeding/target_cells /feeding/task_status /mission/state"/>
+</launch>

@@ -1,0 +1,9 @@
+web_bridge:
+  host: "0.0.0.0"
+  port: 8080
+  scout:
+    # Phase one truth: only CAGE_0 has a complete observation/route namespace.
+    targetable_cages: [0]
+    default_survey_relative_alt_m: 25.0
+    minimum_survey_relative_alt_m: 1.0
+    maximum_survey_relative_alt_m: 120.0

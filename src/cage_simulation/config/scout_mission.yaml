@@ -1,0 +1,40 @@
+scout_mission:
+  targetable_cages: [0]
+  route_source: nominal_survey_region
+  survey_relative_alt_m: 25.0
+  enter_distance_m: 8.0
+  waypoint_acceptance_radius_m: 1.0
+  speed_mps: 8.0
+  expected_cells: 60
+  minimum_coverage: 0.95
+  observation_timeout_sec: 2.0
+  pose_timeout_sec: 2.0
+  finalize_settle_sec: 1.0
+  finalize_timeout_sec: 10.0
+  rtl_timeout_sec: 180.0
+  land_timeout_sec: 120.0
+  home_radius_m: 1.0
+  landed_relative_alt_m: 0.5
+  disarm_stable_sec: 1.0
+  output_root: "$(env HOME)/.ros/cage_uav/scout_runs"
+  auto_activate_completed_map: true
+  record_bag: false
+  bag_topics:
+    - /clock
+    - /tf
+    - /tf_static
+    - /mavros/state
+    - /mavros/extended_state
+    - /mavros/local_position/pose
+    - /mavros/global_position/global
+    - /mavros/global_position/rel_alt
+    - /mavros/mission/reached
+    - /scout/task_request
+    - /scout/task_status
+    - /scout/local_lattice_observation
+    - /scout/offset_hypotheses
+    - /scout/working_lattice_map
+    - /scout/lattice_map
+    - /scout/active_map_status
+    - /scout/map_events
+    - /mission/state

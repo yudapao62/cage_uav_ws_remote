@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<package format="2"><name>cage_waypoint_planner</name><version>0.1.0</version><description>Pure GPS mission waypoint planner.</description><maintainer email="ubuntu@example.com">ubuntu</maintainer><license>MIT</license><buildtool_depend>catkin</buildtool_depend><depend>rospy</depend><depend>sensor_msgs</depend><depend>cage_msgs</depend><depend>cage_geo</depend><depend>cage_grid</depend></package>

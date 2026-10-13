@@ -1,0 +1,9 @@
+gazebo:
+  cage:
+    shape: "circle"
+    num_buoys: 48
+    buoy_radius: 0.35
+    buoy_height: 0.50
+  uav:
+    # Applies to visual mesh only; collision/inertial/plugin geometry is unchanged.
+    visual_scale: 2.0

@@ -1,0 +1,30 @@
+simulation:
+  backend: sitl
+
+manual_control:
+  roll_axis: 0
+  pitch_axis: 1
+  throttle_axis: 4
+  yaw_axis: 3
+  roll_reverse: false
+  pitch_reverse: true
+  throttle_reverse: false
+  yaw_reverse: false
+  takeover_button: 0
+  request_auto_button: 1
+  land_button: 2
+  pwm_min: 1000
+  pwm_trim: 1500
+  pwm_max: 2000
+  deadzone: 0.08
+  publish_rate: 30.0
+  joystick_timeout: 0.5
+  release_frames: 5
+
+control_authority:
+  initial_owner: AUTO
+  auto_mode: GUIDED
+  manual_mode: LOITER
+  land_mode: LAND
+  mode_request_interval: 1.0
+  release_confirm_delay: 0.25

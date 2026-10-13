@@ -1,0 +1,50 @@
+cage:
+  geometry_mode: rectangular
+
+persistent_lattice:
+  use_for_tasks: true
+  require_feeder_identity_gate: true
+  deformation_preset: medium
+  deformation_seed: 42
+  observation_source: oracle_noisy
+  feeder_visual_source: oracle_noisy
+
+  oracle:
+    visibility_mode: pose
+    publish_rate_hz: 5.0
+    position_noise_std_m: 0.15
+    dropout_probability: 0.03
+    edge_observed_probability: 0.85
+    footprint_width_m: 48.0
+    footprint_height_m: 36.0
+
+  feeder_oracle:
+    visibility_mode: pose
+    publish_rate_hz: 5.0
+    position_noise_std_m: 0.20
+    dropout_probability: 0.05
+    edge_observed_probability: 0.80
+    footprint_width_m: 36.0
+    footprint_height_m: 24.0
+
+scout_map_registry:
+  active_status_timeout_sec: 3.0
+  heartbeat_rate_hz: 1.0
+  lease_ttl_sec: 5.0
+  max_snapshot_age_sec: 0.0
+  minimum_coverage: 0.95
+  allow_legacy_v1: true
+  max_json_bytes: 16777216
+  max_artifact_bytes: 1073741824
+  max_artifact_count: 64
+  environment_id: cage0-medium-seed42
+  environment_geometry_sha256: ccf8ca6809e75c9477dc1ec78074fcb39572461fcdc0833adff173625d8b0c9e
+  legacy_profiles:
+    9507a9383674937ce3cc73770401400656172d3c0552f2a8a8d653cb2ae628e9:
+      reference_lat: -35.363261
+      reference_lon: 149.165230
+      reference_alt: 584.0
+      preset: medium
+      seed: 42
+      environment_id: cage0-medium-seed42
+      environment_geometry_sha256: ccf8ca6809e75c9477dc1ec78074fcb39572461fcdc0833adff173625d8b0c9e

@@ -1,0 +1,11 @@
+cage:
+  cage_id: 0
+  endpoint_a_lat: -35.36299048
+  endpoint_a_lon: 149.16632858
+  endpoint_a_alt: 584.0
+  endpoint_b_lat: -35.36298985
+  endpoint_b_lon: 149.16698818
+  endpoint_b_alt: 584.0
+  width: 20.0
+  rows: 0
+  cols: 0

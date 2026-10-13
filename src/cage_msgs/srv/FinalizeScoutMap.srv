@@ -1,0 +1,13 @@
+string task_id
+int32 cage_id
+string output_directory
+float32 min_coverage
+---
+bool success
+string reason
+string map_uuid
+uint64 map_version
+uint32 confirmed_cells
+uint32 expected_cells
+float32 coverage
+string snapshot_path

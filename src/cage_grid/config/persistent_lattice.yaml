@@ -1,0 +1,38 @@
+persistent_lattice:
+  observation_source: oracle_noisy
+  top_k: 3
+  commit_probability: 0.65
+  commit_margin: 0.15
+  nominal_sigma_m: 3.0
+  # A 3x4 footprint may advance by several cells between accepted frames.
+  motion_sigma_cells: 2.5
+  min_confirmations: 3
+  # Deprecated: normal launches keep these empty. Persistent recovery is owned
+  # exclusively by scout_map_registry_node and its selector file.
+  restore_map_file: ""
+  save_map_file: ""
+
+  coordinate_optimizer:
+    enabled: true
+    nominal_sigma_m: 4.0
+    anchor_sigma_m: 0.05
+    relative_sigma_m: 0.35
+    huber_delta_m: 1.0
+    stale_variance_rate_m2_per_sec: 0.0025
+
+  feeder:
+    chi_square_gate_2d: 9.21034
+    max_candidates: 9
+    commit_probability: 0.65
+    commit_margin: 0.15
+    max_entropy: 0.90
+    # Source age is supplied by the validated active-map status. Zero disables
+    # physical-age rejection/variance growth for the fixed simulation cage.
+    max_source_age_sec: 0.0
+    source_age_variance_rate_m2_per_sec: 0.0
+    continuous_next_probability: 0.80
+    continuous_stay_probability: 0.15
+    visual_sigma_m: 1.0
+    default_gps_variance_m2: 4.0
+    max_visual_age_sec: 2.0
+    require_visual_evidence: true

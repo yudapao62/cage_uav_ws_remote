@@ -1,0 +1,16 @@
+std_msgs/Header header
+string task_id
+string task_state
+string mode
+int32 cage_id
+int32 current_repeat
+int32 total_repeat
+int32 completed_targets
+int32 total_targets
+string current_cell_id
+string error_code
+string message
+string task_map_uuid
+uint64 task_map_version
+string task_map_sha256
+string task_manifest_sha256
